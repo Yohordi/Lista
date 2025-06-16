@@ -1,72 +1,21 @@
-{
-  "ACARICIDAS": [
+[
     {
-      "codigo": "0001",
-      "producto": "BOTRIMEX X LT",
-      "proveedor": "FARMEX",
-      "activo": "Cardazina 50 g/L",
-      "presentacion": "LT",
-      "precio": 70.00
+        "codigo": "P001",
+        "producto": "Detergente Líquido 1L",
+        "proveedor": "La Fabril",
+        "activo": "Sí",
+        "categoria": "Limpieza",
+        "prresentacion": "Botella",
+        "precio": 5.9
     },
     {
-      "codigo": "0002",
-      "producto": "SPIDER X LT",
-      "proveedor": "AGROKLINGE",
-      "activo": "Abamectin 18 g/L",
-      "presentacion": "LT",
-      "precio": 40.00
-    },
-    {
-      "codigo": "0004",
-      "producto": "TORNADE LT",
-      "proveedor": "AGREVO",
-      "activo": "Permetrina 534 g/L",
-      "presentacion": "LT",
-      "precio":100
-    },
-    {
-      "codigo": "0005",
-      "producto": "LEGADO LT",
-      "proveedor": "ARIS",
-      "activo": "LUFENURON",
-      "presentacion": "LT",
-      "precio": 100.00
+        "codigo": "P002",
+        "producto": "Shampoo Herbal 500ml",
+        "proveedor": "Genéricos Perú",
+        "activo": "Sí",
+        "categoria": "Cuidado Personal",
+        "prresentacion": "Botella",
+        "precio": 8.4
     }
-  ],
-  "FERTILIZANTES": [
-    {
-      "codigo": "0003",
-      "producto": "SULFATO DE COBRE X 25 KG",
-      "proveedor": "EQUILIBRA",
-      "activo": "SULFATO DE COBRE",
-      "presentacion": "SACO",
-      "precio": 400.00
-    },
-    {
-      "codigo": "0006",
-      "producto": "UREA GRANULADA X 50 KG",
-      "proveedor": "EQUILIBRA",
-      "activo": "NITRÓGENO (46%)",
-      "presentacion": "SACO",
-      "precio": 150.00
-    },
-    {
-      "codigo": "0007",
-      "producto": "NITRATO DE CALCIO X 25 KG",
-      "proveedor": "EQUILIBRA",
-      "activo": "NITRATO DE CALCIO",
-      "presentacion": "SACO",
-      "precio": 60.00
-    },
-    {
-      "codigo": "0008",
-      "producto": "FOSFATO MONOAMÓNICO X 25 KG",
-      "proveedor": "EQUILIBRA",
-      "activo": "MAP (11-52-00)",
-      "presentacion": "SACO",
-      "precio": 135.00
-    }
-  ]
-}
-
+]
 
