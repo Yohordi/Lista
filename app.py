@@ -1,4 +1,3 @@
-
 import streamlit as st
 import json
 
@@ -30,3 +29,4 @@ if (tipo_usuario == "Colaborador" and clave == "invitado") or (tipo_usuario == "
     st.dataframe(filtro, use_container_width=True)
 else:
     st.warning("Introduce la clave correcta para acceder.")
+
