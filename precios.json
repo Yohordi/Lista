@@ -2,11 +2,11 @@
   "ACARICIDAS": [
     {
       "codigo": "0001",
-      "producto": "ABAMEX X LL",
+      "producto": "BOTRIMEX X LT",
       "proveedor": "FARMEX",
       "activo": true,
       "presentacion": "LT",
-      "precio": 70.00
+      "precio": 60.00
     },
     {
       "codigo": "0002",
@@ -20,11 +20,11 @@
   "FERTILIZANTES": [
     {
       "codigo": "0003",
-      "producto": "NITRATO DE MAGNESIO X 25 KG",
+      "producto": "SULFATO DE COBRE X 25 KG",
       "proveedor": "EQUILIBRA",
       "activo": true,
       "presentacion": "SACO",
-      "precio": 60.00
+      "precio": 400.00
     }
   ]
 }
