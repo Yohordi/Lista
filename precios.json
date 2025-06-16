@@ -16,18 +16,10 @@
       "presentacion": "LT",
       "precio": 35.00
     },
-    {
-      "codigo": "0003",
-      "producto": "SPIDER X LT",
-      "proveedor": "AGROKLINGE",
-      "activo": true,
-      "presentacion": "LT",
-      "precio": 35.00
-    },
-  ],
+ ],
   "FERTILIZANTES": [
     {
-      "codigo": "0004",
+      "codigo": "0003",
       "producto": "SULFATO DE COBRE X 25 KG",
       "proveedor": "EQUILIBRA",
       "activo": true,
