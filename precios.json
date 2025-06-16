@@ -4,23 +4,23 @@
       "codigo": "0001",
       "producto": "BOTRIMEX X LT",
       "proveedor": "FARMEX",
-      "activo": "CARBENDAZINA",
+      "activo": "Cardazina 50 g/L",
       "presentacion": "LT",
-      "precio": 60.00
+      "precio": 35.00
     },
     {
       "codigo": "0002",
       "producto": "SPIDER X LT",
       "proveedor": "AGROKLINGE",
-      "activo": "ABAMECTINA",
+      "activo": "Abamectin 18 g/L",
       "presentacion": "LT",
       "precio": 35.00
     },
     {
       "codigo": "0004",
-      "producto": "TORNADE ML",
+      "producto": "TORNADE LT",
       "proveedor": "AGREVO",
-      "activo": "PERMETRINA",
+      "activo": "Permetrina 534 g/L",
       "presentacion": "LT",
       "precio":95.50
     },
