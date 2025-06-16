@@ -6,7 +6,7 @@
       "proveedor": "FARMEX",
       "activo": "Cardazina 50 g/L",
       "presentacion": "LT",
-      "precio": 35.00
+      "precio": 70.00
     },
     {
       "codigo": "0002",
@@ -14,7 +14,7 @@
       "proveedor": "AGROKLINGE",
       "activo": "Abamectin 18 g/L",
       "presentacion": "LT",
-      "precio": 35.00
+      "precio": 40.00
     },
     {
       "codigo": "0004",
@@ -22,7 +22,7 @@
       "proveedor": "AGREVO",
       "activo": "Permetrina 534 g/L",
       "presentacion": "LT",
-      "precio":95.50
+      "precio":100
     },
     {
       "codigo": "0005",
