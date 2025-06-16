@@ -12,7 +12,7 @@ modo_admin = (usuario == "YHUERTA" and clave == "7852369")
 with open("precios.json", "r", encoding="utf-8") as f:
     data = json.load(f)
 
-st.title("📋 BIOCITRUS - Listado de Precios")
+st.title("📋 BIOCITRUS - Listado de Precios 💸💸💸")
 categoria = st.selectbox("Selecciona una categoría", list(data.keys()))
 busqueda = st.text_input("Buscar producto")
 
