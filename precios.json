@@ -16,18 +16,18 @@
       "presentacion": "LT",
       "precio": 35.00
     },
-{
+    {
       "codigo": "0002",
-      "producto": " ACARMAX X LT",
-      "proveedor": "CAPEAGRO",
+      "producto": "SPIDER X LT",
+      "proveedor": "AGROKLINGE",
       "activo": true,
       "presentacion": "LT",
-      "precio": 240.00
+      "precio": 35.00
     },
   ],
   "FERTILIZANTES": [
     {
-      "codigo": "0003",
+      "codigo": "0004",
       "producto": "SULFATO DE COBRE X 25 KG",
       "proveedor": "EQUILIBRA",
       "activo": true,
