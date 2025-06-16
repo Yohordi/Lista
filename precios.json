@@ -5,7 +5,7 @@
         "proveedor": "FARMEX",
         "activo": "Abamectina 18 g/L",
         "categoria": "ACARICIDA",
-        "prresentacion": "LT",
+        "presentacion": "LT",
         "precio": 50.00
     },
     {
@@ -14,7 +14,7 @@
         "proveedor": "AGREVO",
         "activo": "Permetrina",
         "categoria": "INSECTISIDA",
-        "prresentacion": "LT",
+        "presentacion": "LT",
         "precio": 1555510.00
     }
 ]
