@@ -15,7 +15,15 @@
       "activo": true,
       "presentacion": "LT",
       "precio": 35.00
-    }
+    },
+{
+      "codigo": "0002",
+      "producto": " ACARMAX X LT",
+      "proveedor": "CAPEAGRO",
+      "activo": true,
+      "presentacion": "LT",
+      "precio": 240.00
+    },
   ],
   "FERTILIZANTES": [
     {
