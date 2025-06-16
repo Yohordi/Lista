@@ -21,6 +21,7 @@ for producto in data.get(categoria, []):
     if busqueda.lower() in producto["producto"].lower():
         st.markdown(f"**{producto['producto']}**")
         st.write(f"Proveedor: {producto['proveedor']}")
+        st.write(f"Activo: {producto['activo']}")
         st.write(f"Presentacion: {producto['presentacion']}")
         st.write(f"Precio: S/ {producto['precio']:.2f}")
         if modo_admin:
