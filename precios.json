@@ -3,19 +3,19 @@
         "codigo": "10000",
         "producto": "Abtin x LT",
         "proveedor": "FARMEX",
-        "activo": "Sí",
-        "categoria": "ACARISIDA",
+        "activo": "Abamectina 18 g/L",
+        "categoria": "ACARICIDA",
         "prresentacion": "LT",
-        "precio": 35.00
+        "precio": 50.00
     },
     {
         "codigo": "10010",
         "producto": "Tornade x LT",
         "proveedor": "AGREVO",
-        "activo": "Sí",
+        "activo": "Permetrina",
         "categoria": "INSECTISIDA",
         "prresentacion": "LT",
-        "precio": 110.00
+        "precio": 1555510.00
     }
 ]
 
