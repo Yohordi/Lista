@@ -15,6 +15,22 @@
       "activo": "ABAMECTINA",
       "presentacion": "LT",
       "precio": 35.00
+    },
+    {
+      "codigo": "0004",
+      "producto": "TORNADE ML",
+      "proveedor": "AGREVO",
+      "activo": "PERMETRINA",
+      "presentacion": "LT",
+      "precio":95.50
+    },
+    {
+      "codigo": "0005",
+      "producto": "LEGADO LT",
+      "proveedor": "ARIS",
+      "activo": "LUFENURON",
+      "presentacion": "LT",
+      "precio": 100.00
     }
   ],
   "FERTILIZANTES": [
@@ -25,7 +41,32 @@
       "activo": "SULFATO DE COBRE",
       "presentacion": "SACO",
       "precio": 400.00
+    },
+    {
+      "codigo": "0006",
+      "producto": "UREA GRANULADA X 50 KG",
+      "proveedor": "EQUILIBRA",
+      "activo": "NITRÓGENO (46%)",
+      "presentacion": "SACO",
+      "precio": 150.00
+    },
+    {
+      "codigo": "0007",
+      "producto": "NITRATO DE CALCIO X 25 KG",
+      "proveedor": "EQUILIBRA",
+      "activo": "NITRATO DE CALCIO",
+      "presentacion": "SACO",
+      "precio": 60.00
+    },
+    {
+      "codigo": "0008",
+      "producto": "FOSFATO MONOAMÓNICO X 25 KG",
+      "proveedor": "EQUILIBRA",
+      "activo": "MAP (11-52-00)",
+      "presentacion": "SACO",
+      "precio": 135.00
     }
   ]
 }
+
 
