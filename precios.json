@@ -8,6 +8,15 @@
         "presentacion": "LT",
         "precio": 50.00
     },
+   {
+        "codigo": "10020",
+        "producto": "Abamex x LT",
+        "proveedor": "FARMEX",
+        "activo": "Abamectina 18 g/L",
+        "categoria": "ACARICIDA",
+        "presentacion": "LT",
+        "precio": 70.00
+    }, 
     {
         "codigo": "10010",
         "producto": "Tornade x LT",
