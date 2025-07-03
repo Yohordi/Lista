@@ -11,7 +11,7 @@ clave = st.text_input("Ingrese la clave", type="password")
 
 acceso_concedido = False
 if tipo_usuario and clave:
-    if (tipo_usuario == "Colaborador" and clave == "invitado") or (tipo_usuario == "Administrador" and clave == "7852369"):
+    if (tipo_usuario == "Colaborador" and clave == "91") or (tipo_usuario == "Administrador" and clave == "7852369"):
         acceso_concedido = True
     else:
         st.error("Clave incorrecta.")
