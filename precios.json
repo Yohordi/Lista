@@ -1,29 +1,18 @@
 [
-    {
-        "codigo": "10000",
-        "producto": "Abtin x LT",
-        "proveedor": "FARMEX",
-        "activo": "Abamectina 18 g/L",
-        "categoria": "ACARICIDA",
-        "presentacion": "LT",
-        "precio": 50.00
-    },
-   {
-        "codigo": "10020",
-        "producto": "Abamex x LT",
-        "proveedor": "FARMEX",
-        "activo": "Abamectina 18 g/L",
-        "categoria": "ACARICIDA",
-        "presentacion": "LT",
-        "precio": 70.00
-    }, 
-    {
-        "codigo": "10010",
-        "producto": "Tornade x LT",
-        "proveedor": "AGREVO",
-        "activo": "Permetrina",
-        "categoria": "INSECTISIDA",
-        "presentacion": "LT",
-        "precio": 1555510.00
-    }
+  {
+    "producto": "ABAMEX X LT",
+    "proveedor": "AGROQUIMICA PERUANA",
+    "activo": "ABAMECTINA",
+    "categoria": "INSECTICIDA",
+    "presentacion": "1 LITRO",
+    "precio": 45.5
+  },
+  {
+    "producto": "ACARMAX X LT",
+    "proveedor": "CULTIFLORA",
+    "activo": "ACARICIDA",
+    "categoria": "ACARICIDA",
+    "presentacion": "1 LITRO",
+    "precio": 38.0
+  }
 ]
