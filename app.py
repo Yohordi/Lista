@@ -1,5 +1,6 @@
 import streamlit as st
 import json
+import pandas as pd
 
 st.set_page_config(page_title="📦 Listado de Precios", layout="wide")
 st.markdown("<h1 style='text-align: center; color: #2c3e50;'>📦 Sistema de Precios</h1>", unsafe_allow_html=True)
@@ -26,22 +27,22 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-# --- Acceso ---
-with st.container():
-    col1, col2 = st.columns([1, 2])
-    with col1:
-        tipo_usuario = st.radio("🔐 Tipo de acceso", ["Colaborador", "Administrador"])
-    with col2:
-        clave = st.text_input("🔑 Ingrese la clave", type="password")
+# --- Acceso con botón ---
+st.markdown("### 🔐 Iniciar sesión")
+col1, col2, col3 = st.columns([1.5, 2.5, 1])
+with col1:
+    tipo_usuario = st.radio("Tipo de acceso", ["Colaborador", "Administrador"])
+with col2:
+    clave = st.text_input("Ingrese la clave", type="password")
+with col3:
+    acceder = st.button("🔓 Acceder")
 
 acceso_concedido = False
-if tipo_usuario and clave:
+if acceder:
     if (tipo_usuario == "Colaborador" and clave == "91") or (tipo_usuario == "Administrador" and clave == "7852369"):
         acceso_concedido = True
     else:
         st.error("❌ Clave incorrecta.")
-else:
-    st.warning("⚠️ Debe ingresar una clave para continuar.")
 
 # --- Contenido principal ---
 if acceso_concedido:
@@ -52,7 +53,6 @@ if acceso_concedido:
         st.error("⚠️ Error al cargar el archivo de precios.")
         st.stop()
 
-    # Ordenar productos alfabéticamente
     productos = sorted(productos, key=lambda x: x["producto"])
 
     st.markdown("### 🔍 Buscar productos")
@@ -64,10 +64,15 @@ if acceso_concedido:
         busqueda = st.text_input("Buscar por nombre o parte del producto").lower()
 
     resultados = [p for p in productos if (proveedor_sel == "Todos" or p["proveedor"] == proveedor_sel) and busqueda in p["producto"].lower()]
-    st.markdown("### 📋 Resultados")
-    st.dataframe(resultados, use_container_width=True)
 
-    # --- Agregar producto ---
+    if resultados:
+        st.markdown("### 📋 **RESULTADOS**")
+        df = pd.DataFrame(resultados)
+        df.columns = [col.upper() for col in df.columns]
+        st.dataframe(df.style.set_properties(**{'font-weight': 'bold'}), use_container_width=True)
+    else:
+        st.info("No se encontraron productos.")
+
     if tipo_usuario == "Administrador":
         st.markdown("---")
         st.markdown("### ➕ Agregar nuevo producto")
@@ -96,7 +101,6 @@ if acceso_concedido:
                     json.dump(productos, f, indent=2, ensure_ascii=False)
                 st.success("✅ Producto agregado exitosamente.")
 
-        # --- Editar/Eliminar producto ---
         st.markdown("---")
         st.markdown("### ✏️ Editar o eliminar producto")
         nombres = [p["producto"] for p in productos]
@@ -135,3 +139,4 @@ if acceso_concedido:
                     with open("precios.json", "w", encoding="utf-8") as f:
                         json.dump(productos, f, indent=2, ensure_ascii=False)
                     st.success("🗑️ Producto eliminado.")
+
