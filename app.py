@@ -36,20 +36,25 @@ if not st.session_state.logueado:
     st.markdown("### 🔐 Iniciar sesión")
     col1, col2, col3 = st.columns([1.5, 2.5, 1])
     with col1:
-        tipo_usuario = st.radio("Tipo de acceso", ["Colaborador", "Administrador"], key="tipo_usuario")
+        tipo_input = st.radio("Tipo de acceso", ["Colaborador", "Administrador"])
     with col2:
-        clave = st.text_input("Ingrese la clave", type="password", key="clave_input")
+        clave = st.text_input("Ingrese la clave", type="password")
     with col3:
         if st.button("🔓 Acceder"):
-            if (tipo_usuario == "Colaborador" and clave == "91") or (tipo_usuario == "Administrador" and clave == "7852369"):
+            if (tipo_input == "Colaborador" and clave == "91") or (tipo_input == "Administrador" and clave == "7852369"):
                 st.session_state.logueado = True
-                st.session_state.tipo_usuario = tipo_usuario
+                st.session_state.tipo_usuario = tipo_input
                 st.experimental_rerun()
             else:
                 st.error("❌ Clave incorrecta.")
     st.stop()
 
-# Ya logueado
+st.markdown(f"👤 Bienvenido, **{st.session_state.tipo_usuario}**")
+if st.button("🔒 Cerrar sesión"):
+    st.session_state.logueado = False
+    st.session_state.tipo_usuario = None
+    st.experimental_rerun()
+
 tipo_usuario = st.session_state.tipo_usuario
 
 # --- Cargar productos ---
