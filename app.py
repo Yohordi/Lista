@@ -5,7 +5,7 @@ import pandas as pd
 st.set_page_config(page_title="📦 Listado de Precios", layout="wide")
 st.markdown("<h1 style='text-align: center; color: #2c3e50;'>📦 Sistema de Precios</h1>", unsafe_allow_html=True)
 
-# --- Estilos ---
+# --- Estilos personalizados ---
 st.markdown("""
     <style>
     .stTextInput>div>div>input {
@@ -27,32 +27,29 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-# --- CONTROL DE SESIÓN ---
+# --- Control de sesión ---
 if "logueado" not in st.session_state:
     st.session_state.logueado = False
     st.session_state.tipo_usuario = None
 
-# --- LOGIN ---
 if not st.session_state.logueado:
     st.markdown("### 🔐 Iniciar sesión")
     col1, col2, col3 = st.columns([1.5, 2.5, 1])
     with col1:
-        tipo_usuario = st.radio("Tipo de acceso", ["Colaborador", "Administrador"])
+        tipo_usuario = st.radio("Tipo de acceso", ["Colaborador", "Administrador"], key="tipo_usuario")
     with col2:
-        clave = st.text_input("Ingrese la clave", type="password")
+        clave = st.text_input("Ingrese la clave", type="password", key="clave_input")
     with col3:
-        acceder = st.button("🔓 Acceder")
-
-    if acceder:
-        if (tipo_usuario == "Colaborador" and clave == "91") or (tipo_usuario == "Administrador" and clave == "7852369"):
-            st.session_state.logueado = True
-            st.session_state.tipo_usuario = tipo_usuario
-            st.rerun()
-        else:
-            st.error("❌ Clave incorrecta.")
+        if st.button("🔓 Acceder"):
+            if (tipo_usuario == "Colaborador" and clave == "91") or (tipo_usuario == "Administrador" and clave == "7852369"):
+                st.session_state.logueado = True
+                st.session_state.tipo_usuario = tipo_usuario
+                st.experimental_rerun()
+            else:
+                st.error("❌ Clave incorrecta.")
     st.stop()
 
-# --- CONTENIDO SI YA ESTÁ LOGUEADO ---
+# Ya logueado
 tipo_usuario = st.session_state.tipo_usuario
 
 # --- Cargar productos ---
@@ -65,7 +62,7 @@ except:
 
 productos = sorted(productos, key=lambda x: x["producto"])
 
-# --- FILTROS Y BÚSQUEDA ---
+# --- Filtros y búsqueda ---
 st.markdown("### 🔍 Buscar productos")
 colf1, colf2 = st.columns([2, 3])
 with colf1:
@@ -80,7 +77,7 @@ resultados = [
     and busqueda in p["producto"].lower()
 ]
 
-# --- MOSTRAR RESULTADOS ---
+# --- Mostrar resultados ---
 if resultados:
     st.markdown("### 📋 **RESULTADOS**")
     df = pd.DataFrame(resultados)
@@ -89,7 +86,7 @@ if resultados:
 else:
     st.info("No se encontraron productos.")
 
-# --- ADMINISTRADOR: AGREGAR, EDITAR, ELIMINAR ---
+# --- Si es administrador, mostrar panel de edición ---
 if tipo_usuario == "Administrador":
     st.markdown("---")
     st.markdown("### ➕ Agregar nuevo producto")
@@ -117,7 +114,7 @@ if tipo_usuario == "Administrador":
             with open("precios.json", "w", encoding="utf-8") as f:
                 json.dump(productos, f, indent=2, ensure_ascii=False)
             st.success("✅ Producto agregado exitosamente.")
-            st.rerun()
+            st.experimental_rerun()
 
     st.markdown("---")
     st.markdown("### ✏️ Editar o eliminar producto")
@@ -151,11 +148,11 @@ if tipo_usuario == "Administrador":
                 with open("precios.json", "w", encoding="utf-8") as f:
                     json.dump(productos, f, indent=2, ensure_ascii=False)
                 st.success("✅ Cambios guardados.")
-                st.rerun()
+                st.experimental_rerun()
 
             if eliminar:
                 productos.remove(producto_sel)
                 with open("precios.json", "w", encoding="utf-8") as f:
                     json.dump(productos, f, indent=2, ensure_ascii=False)
                 st.success("🗑️ Producto eliminado.")
-                st.rerun()
+                st.experimental_rerun()
