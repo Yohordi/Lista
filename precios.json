@@ -1,18 +1,27 @@
 [
-  {
-    "producto": "ABAMEX X LT",
-    "proveedor": "AGROQUIMICA PERUANA",
-    "activo": "ABAMECTINA",
-    "categoria": "INSECTICIDA",
-    "presentacion": "LT",
-    "precio": 45.5
-  },
-  {
-    "producto": "ACARMAX X LT",
-    "proveedor": "CULTIFLORA",
-    "activo": "ACARICIDA",
-    "categoria": "ACARICIDA",
-    "presentacion": " LT",
-    "precio": 38.0
-  }
+  {"producto": "ABAMEX X LT", "proveedor": "", "activo": "", "categoria": "", "presentacion": "", "precio": 0},
+  {"producto": "ABSOLUTE X LT", "proveedor": "", "activo": "", "categoria": "", "presentacion": "", "precio": 0},
+  {"producto": "ABTIN X X LT", "proveedor": "", "activo": "", "categoria": "", "presentacion": "", "precio": 0},
+  {"producto": "ACARMAX X LT", "proveedor": "", "activo": "", "categoria": "", "presentacion": "", "precio": 0},
+  {"producto": "ACARSTIN X LT", "proveedor": "", "activo": "", "categoria": "", "presentacion": "", "precio": 0},
+  {"producto": "ACIDO BORICO X 25 KG", "proveedor": "", "activo": "", "categoria": "", "presentacion": "", "precio": 0},
+  {"producto": "ACIDO CITRICO X 25 KG", "proveedor": "", "activo": "", "categoria": "", "presentacion": "", "precio": 0},
+  {"producto": "ACIDO FOSFORICO X 30 KG", "proveedor": "", "activo": "", "categoria": "", "presentacion": "", "precio": 0},
+  {"producto": "ACIDO FOSFORICO X 50 KG", "proveedor": "", "activo": "", "categoria": "", "presentacion": "", "precio": 0},
+  {"producto": "AGRIMECTIN X 20 LT", "proveedor": "", "activo": "", "categoria": "", "presentacion": "", "precio": 0},
+  {"producto": "AGRIMECTIN X 200 LT", "proveedor": "", "activo": "", "categoria": "", "presentacion": "", "precio": 0},
+  {"producto": "AGRIMECTIN X LT", "proveedor": "", "activo": "", "categoria": "", "presentacion": "", "precio": 0},
+  {"producto": "AGROSTEMIN X LT", "proveedor": "", "activo": "", "categoria": "", "presentacion": "", "precio": 0},
+  {"producto": "AKARIDOL X LT", "proveedor": "", "activo": "", "categoria": "", "presentacion": "", "precio": 0},
+  {"producto": "ALFAKLING X LT", "proveedor": "", "activo": "", "categoria": "", "presentacion": "", "precio": 0},
+  {"producto": "ALGARIUM X 10 LT", "proveedor": "", "activo": "", "categoria": "", "presentacion": "", "precio": 0},
+  {"producto": "ALGARIUM X LT", "proveedor": "", "activo": "", "categoria": "", "presentacion": "", "precio": 0},
+  {"producto": "ALGARIUM X LT", "proveedor": "", "activo": "", "categoria": "", "presentacion": "", "precio": 0},
+  {"producto": "ALGER TRIO X LT", "proveedor": "", "activo": "", "categoria": "", "presentacion": "", "precio": 0},
+  {"producto": "ALIETTE X KG", "proveedor": "", "activo": "", "categoria": "", "presentacion": "", "precio": 0},
+  {"producto": "AMAZOTE X 100 GR", "proveedor": "", "activo": "", "categoria": "", "presentacion": "", "precio": 0},
+  {"producto": "ANTRACOL X 10 KG", "proveedor": "", "activo": "", "categoria": "", "presentacion": "", "precio": 0},
+  {"producto": "ANTRACOL X KG", "proveedor": "", "activo": "", "categoria": "", "presentacion": "", "precio": 0},
+  {"producto": "ANULADO", "proveedor": "", "activo": "", "categoria": "", "presentacion": "", "precio": 0},
+  {"producto": "ATTACK X KG", "proveedor": "", "activo": "", "categoria": "", "presentacion": "", "precio": 0}
 ]
