@@ -1,10 +1,8 @@
 import streamlit as st
 import json
 import pandas as pd
-
 st.set_page_config(page_title="📦 Listado de Precios", layout="wide")
 st.markdown("<h1 style='text-align: center; color: #2c3e50;'>📦 Sistema de Precios</h1>", unsafe_allow_html=True)
-
 # --- Estilos personalizados ---
 st.markdown("""
     <style>
@@ -26,12 +24,10 @@ st.markdown("""
     }
     </style>
 """, unsafe_allow_html=True)
-
 # --- Control de sesión ---
 if "logueado" not in st.session_state:
     st.session_state.logueado = False
     st.session_state.tipo_usuario = None
-
 if not st.session_state.logueado:
     st.markdown("### 🔐 Iniciar sesión")
     col1, col2, col3 = st.columns([1.5, 2.5, 1])
@@ -49,15 +45,12 @@ if not st.session_state.logueado:
             else:
                 st.error("❌ Clave incorrecta.")
     st.stop()
-
 st.markdown(f"👤 Bienvenido, **{st.session_state.tipo_usuario}**")
 if st.button("🔒 Cerrar sesión"):
     st.session_state.logueado = False
     st.session_state.tipo_usuario = None
     st.experimental_rerun()
-
 tipo_usuario = st.session_state.tipo_usuario
-
 # --- Cargar productos ---
 try:
     with open("precios.json", "r", encoding="utf-8") as f:
@@ -65,9 +58,7 @@ try:
 except:
     st.error("⚠️ Error al cargar el archivo de precios.")
     st.stop()
-
 productos = sorted(productos, key=lambda x: x["producto"])
-
 # --- Filtros y búsqueda ---
 st.markdown("### 🔍 Buscar productos")
 colf1, colf2 = st.columns([2, 3])
@@ -76,13 +67,11 @@ with colf1:
     proveedor_sel = st.selectbox("Filtrar por proveedor", ["Todos"] + proveedores)
 with colf2:
     busqueda = st.text_input("Buscar por nombre o parte del producto").lower()
-
 resultados = [
     p for p in productos
     if (proveedor_sel == "Todos" or p["proveedor"] == proveedor_sel)
     and busqueda in p["producto"].lower()
 ]
-
 # --- Mostrar resultados ---
 if resultados:
     st.markdown("### 📋 **RESULTADOS**")
@@ -91,7 +80,6 @@ if resultados:
     st.dataframe(df.style.set_properties(**{'font-weight': 'bold'}), use_container_width=True)
 else:
     st.info("No se encontraron productos.")
-
 # --- Si es administrador, mostrar panel de edición ---
 if tipo_usuario == "Administrador":
     st.markdown("---")
@@ -121,7 +109,6 @@ if tipo_usuario == "Administrador":
                 json.dump(productos, f, indent=2, ensure_ascii=False)
             st.success("✅ Producto agregado exitosamente.")
             st.experimental_rerun()
-
     st.markdown("---")
     st.markdown("### ✏️ Editar o eliminar producto")
     nombres = [p["producto"] for p in productos]
@@ -155,7 +142,6 @@ if tipo_usuario == "Administrador":
                     json.dump(productos, f, indent=2, ensure_ascii=False)
                 st.success("✅ Cambios guardados.")
                 st.experimental_rerun()
-
             if eliminar:
                 productos.remove(producto_sel)
                 with open("precios.json", "w", encoding="utf-8") as f:
