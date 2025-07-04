@@ -42,9 +42,10 @@ if not st.session_state.logueado:
     with col3:
         if st.button("🔓 Acceder"):
             if (tipo_input == "Colaborador" and clave == "91") or (tipo_input == "Administrador" and clave == "7852369"):
-                st.session_state.logueado = True
-                st.session_state.tipo_usuario = tipo_input
-                st.experimental_rerun()
+                if not st.session_state.logueado:
+                    st.session_state.logueado = True
+                    st.session_state.tipo_usuario = tipo_input
+                    st.experimental_rerun()
             else:
                 st.error("❌ Clave incorrecta.")
     st.stop()
@@ -161,3 +162,6 @@ if tipo_usuario == "Administrador":
                     json.dump(productos, f, indent=2, ensure_ascii=False)
                 st.success("🗑️ Producto eliminado.")
                 st.experimental_rerun()
+
+      
+        
