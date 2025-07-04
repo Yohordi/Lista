@@ -5,7 +5,7 @@ import pandas as pd
 st.set_page_config(page_title="📦 Listado de Precios", layout="wide")
 st.markdown("<h1 style='text-align: center; color: #2c3e50;'>📦 Sistema de Precios</h1>", unsafe_allow_html=True)
 
-# --- Estilos personalizados ---
+# --- Estilos ---
 st.markdown("""
     <style>
     .stTextInput>div>div>input {
@@ -27,116 +27,135 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-# --- Acceso con botón ---
-st.markdown("### 🔐 Iniciar sesión")
-col1, col2, col3 = st.columns([1.5, 2.5, 1])
-with col1:
-    tipo_usuario = st.radio("Tipo de acceso", ["Colaborador", "Administrador"])
-with col2:
-    clave = st.text_input("Ingrese la clave", type="password")
-with col3:
-    acceder = st.button("🔓 Acceder")
+# --- CONTROL DE SESIÓN ---
+if "logueado" not in st.session_state:
+    st.session_state.logueado = False
+    st.session_state.tipo_usuario = None
 
-acceso_concedido = False
-if acceder:
-    if (tipo_usuario == "Colaborador" and clave == "91") or (tipo_usuario == "Administrador" and clave == "7852369"):
-        acceso_concedido = True
-    else:
-        st.error("❌ Clave incorrecta.")
+# --- LOGIN ---
+if not st.session_state.logueado:
+    st.markdown("### 🔐 Iniciar sesión")
+    col1, col2, col3 = st.columns([1.5, 2.5, 1])
+    with col1:
+        tipo_usuario = st.radio("Tipo de acceso", ["Colaborador", "Administrador"])
+    with col2:
+        clave = st.text_input("Ingrese la clave", type="password")
+    with col3:
+        acceder = st.button("🔓 Acceder")
 
-# --- Contenido principal ---
-if acceso_concedido:
-    try:
-        with open("precios.json", "r", encoding="utf-8") as f:
-            productos = json.load(f)
-    except:
-        st.error("⚠️ Error al cargar el archivo de precios.")
-        st.stop()
+    if acceder:
+        if (tipo_usuario == "Colaborador" and clave == "91") or (tipo_usuario == "Administrador" and clave == "7852369"):
+            st.session_state.logueado = True
+            st.session_state.tipo_usuario = tipo_usuario
+            st.rerun()
+        else:
+            st.error("❌ Clave incorrecta.")
+    st.stop()
 
-    productos = sorted(productos, key=lambda x: x["producto"])
+# --- CONTENIDO SI YA ESTÁ LOGUEADO ---
+tipo_usuario = st.session_state.tipo_usuario
 
-    st.markdown("### 🔍 Buscar productos")
-    colf1, colf2 = st.columns([2, 3])
-    with colf1:
-        proveedores = sorted(set([p["proveedor"] for p in productos]))
-        proveedor_sel = st.selectbox("Filtrar por proveedor", ["Todos"] + proveedores)
-    with colf2:
-        busqueda = st.text_input("Buscar por nombre o parte del producto").lower()
+# --- Cargar productos ---
+try:
+    with open("precios.json", "r", encoding="utf-8") as f:
+        productos = json.load(f)
+except:
+    st.error("⚠️ Error al cargar el archivo de precios.")
+    st.stop()
 
-    resultados = [p for p in productos if (proveedor_sel == "Todos" or p["proveedor"] == proveedor_sel) and busqueda in p["producto"].lower()]
+productos = sorted(productos, key=lambda x: x["producto"])
 
-    if resultados:
-        st.markdown("### 📋 **RESULTADOS**")
-        df = pd.DataFrame(resultados)
-        df.columns = [col.upper() for col in df.columns]
-        st.dataframe(df.style.set_properties(**{'font-weight': 'bold'}), use_container_width=True)
-    else:
-        st.info("No se encontraron productos.")
+# --- FILTROS Y BÚSQUEDA ---
+st.markdown("### 🔍 Buscar productos")
+colf1, colf2 = st.columns([2, 3])
+with colf1:
+    proveedores = sorted(set([p["proveedor"] for p in productos]))
+    proveedor_sel = st.selectbox("Filtrar por proveedor", ["Todos"] + proveedores)
+with colf2:
+    busqueda = st.text_input("Buscar por nombre o parte del producto").lower()
 
-    if tipo_usuario == "Administrador":
-        st.markdown("---")
-        st.markdown("### ➕ Agregar nuevo producto")
-        with st.form("nuevo_producto"):
+resultados = [
+    p for p in productos
+    if (proveedor_sel == "Todos" or p["proveedor"] == proveedor_sel)
+    and busqueda in p["producto"].lower()
+]
+
+# --- MOSTRAR RESULTADOS ---
+if resultados:
+    st.markdown("### 📋 **RESULTADOS**")
+    df = pd.DataFrame(resultados)
+    df.columns = [col.upper() for col in df.columns]
+    st.dataframe(df.style.set_properties(**{'font-weight': 'bold'}), use_container_width=True)
+else:
+    st.info("No se encontraron productos.")
+
+# --- ADMINISTRADOR: AGREGAR, EDITAR, ELIMINAR ---
+if tipo_usuario == "Administrador":
+    st.markdown("---")
+    st.markdown("### ➕ Agregar nuevo producto")
+    with st.form("nuevo_producto"):
+        col1, col2 = st.columns(2)
+        with col1:
+            producto = st.text_input("🧪 Producto")
+            proveedor = st.text_input("🏭 Proveedor")
+            activo = st.text_input("💊 Activo (composición)")
+        with col2:
+            categoria = st.text_input("📂 Categoría")
+            presentacion = st.text_input("📦 Presentación")
+            precio = st.number_input("💲 Precio", min_value=0.0, step=0.1)
+        submitted = st.form_submit_button("✅ Agregar producto")
+        if submitted:
+            nuevo = {
+                "producto": producto,
+                "proveedor": proveedor,
+                "activo": activo,
+                "categoria": categoria,
+                "presentacion": presentacion,
+                "precio": precio
+            }
+            productos.append(nuevo)
+            with open("precios.json", "w", encoding="utf-8") as f:
+                json.dump(productos, f, indent=2, ensure_ascii=False)
+            st.success("✅ Producto agregado exitosamente.")
+            st.rerun()
+
+    st.markdown("---")
+    st.markdown("### ✏️ Editar o eliminar producto")
+    nombres = [p["producto"] for p in productos]
+    seleccionado = st.selectbox("Selecciona un producto", nombres)
+    producto_sel = next((p for p in productos if p["producto"] == seleccionado), None)
+    if producto_sel:
+        with st.form("editar_producto"):
             col1, col2 = st.columns(2)
             with col1:
-                producto = st.text_input("🧪 Producto")
-                proveedor = st.text_input("🏭 Proveedor")
-                activo = st.text_input("💊 Activo (composición)")
+                nuevo_producto = st.text_input("🧪 Producto", value=producto_sel["producto"])
+                nuevo_proveedor = st.text_input("🏭 Proveedor", value=producto_sel["proveedor"])
+                nuevo_activo = st.text_input("💊 Activo", value=producto_sel["activo"])
             with col2:
-                categoria = st.text_input("📂 Categoría")
-                presentacion = st.text_input("📦 Presentación")
-                precio = st.number_input("💲 Precio", min_value=0.0, step=0.1)
-            submitted = st.form_submit_button("✅ Agregar producto")
-            if submitted:
-                nuevo = {
-                    "producto": producto,
-                    "proveedor": proveedor,
-                    "activo": activo,
-                    "categoria": categoria,
-                    "presentacion": presentacion,
-                    "precio": precio
-                }
-                productos.append(nuevo)
+                nueva_categoria = st.text_input("📂 Categoría", value=producto_sel["categoria"])
+                nueva_presentacion = st.text_input("📦 Presentación", value=producto_sel["presentacion"])
+                nuevo_precio = st.number_input("💲 Precio", value=producto_sel["precio"], min_value=0.0, step=0.1)
+            col_ed1, col_ed2 = st.columns(2)
+            guardar = col_ed1.form_submit_button("💾 Guardar cambios")
+            eliminar = col_ed2.form_submit_button("🗑️ Eliminar producto")
+
+            if guardar:
+                producto_sel.update({
+                    "producto": nuevo_producto,
+                    "proveedor": nuevo_proveedor,
+                    "activo": nuevo_activo,
+                    "categoria": nueva_categoria,
+                    "presentacion": nueva_presentacion,
+                    "precio": nuevo_precio
+                })
                 with open("precios.json", "w", encoding="utf-8") as f:
                     json.dump(productos, f, indent=2, ensure_ascii=False)
-                st.success("✅ Producto agregado exitosamente.")
+                st.success("✅ Cambios guardados.")
+                st.rerun()
 
-        st.markdown("---")
-        st.markdown("### ✏️ Editar o eliminar producto")
-        nombres = [p["producto"] for p in productos]
-        seleccionado = st.selectbox("Selecciona un producto para editar o eliminar", nombres)
-        producto_sel = next((p for p in productos if p["producto"] == seleccionado), None)
-        if producto_sel:
-            with st.form("editar_producto"):
-                col1, col2 = st.columns(2)
-                with col1:
-                    nuevo_producto = st.text_input("🧪 Producto", value=producto_sel["producto"])
-                    nuevo_proveedor = st.text_input("🏭 Proveedor", value=producto_sel["proveedor"])
-                    nuevo_activo = st.text_input("💊 Activo", value=producto_sel["activo"])
-                with col2:
-                    nueva_categoria = st.text_input("📂 Categoría", value=producto_sel["categoria"])
-                    nueva_presentacion = st.text_input("📦 Presentación", value=producto_sel["presentacion"])
-                    nuevo_precio = st.number_input("💲 Precio", value=producto_sel["precio"], min_value=0.0, step=0.1)
-                col_ed1, col_ed2 = st.columns(2)
-                guardar = col_ed1.form_submit_button("💾 Guardar cambios")
-                eliminar = col_ed2.form_submit_button("🗑️ Eliminar producto")
-
-                if guardar:
-                    producto_sel.update({
-                        "producto": nuevo_producto,
-                        "proveedor": nuevo_proveedor,
-                        "activo": nuevo_activo,
-                        "categoria": nueva_categoria,
-                        "presentacion": nueva_presentacion,
-                        "precio": nuevo_precio
-                    })
-                    with open("precios.json", "w", encoding="utf-8") as f:
-                        json.dump(productos, f, indent=2, ensure_ascii=False)
-                    st.success("✅ Cambios guardados.")
-
-                if eliminar:
-                    productos.remove(producto_sel)
-                    with open("precios.json", "w", encoding="utf-8") as f:
-                        json.dump(productos, f, indent=2, ensure_ascii=False)
-                    st.success("🗑️ Producto eliminado.")
-
+            if eliminar:
+                productos.remove(producto_sel)
+                with open("precios.json", "w", encoding="utf-8") as f:
+                    json.dump(productos, f, indent=2, ensure_ascii=False)
+                st.success("🗑️ Producto eliminado.")
+                st.rerun()
