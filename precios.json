@@ -4,7 +4,7 @@
     "proveedor": "AGROQUIMICA PERUANA",
     "activo": "ABAMECTINA",
     "categoria": "INSECTICIDA",
-    "presentacion": "1 LITRO",
+    "presentacion": "LT",
     "precio": 45.5
   },
   {
@@ -12,7 +12,7 @@
     "proveedor": "CULTIFLORA",
     "activo": "ACARICIDA",
     "categoria": "ACARICIDA",
-    "presentacion": "1 LITRO",
+    "presentacion": " LT",
     "precio": 38.0
   }
 ]
