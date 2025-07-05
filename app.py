@@ -5,7 +5,7 @@ from fpdf import FPDF
 import tempfile
 
 st.set_page_config(page_title="📦 Listado de Precios", layout="wide")
-st.markdown("<h1 style='text-align: center; color: #2c3e50;'>📦 Sistema de Precios</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; color: #2c3e50;'>📦 Sistema de Precios Biocitrus</h1>", unsafe_allow_html=True)
 
 # --- Estilos personalizados ---
 st.markdown("""
