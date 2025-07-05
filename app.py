@@ -166,7 +166,7 @@ if tipo_usuario == "Administrador":
                     json.dump(productos, f, indent=2, ensure_ascii=False)
                 st.success("🗑️ Producto eliminado.")
                 st.rerun()
-st.markdown("### 🔒 Descargar PDF con clave")
+st.markdown("### 🔒 Descargar PDF")
 
 with st.expander("🔐 Ingresar clave para exportar PDF"):
     clave_pdf = st.text_input("Ingrese la clave para imprimir", type="password")
