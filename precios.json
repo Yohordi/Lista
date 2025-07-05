@@ -2,31 +2,31 @@
   {
     "producto": "ABAMEX X LT",
     "proveedor": "FARMEX",
-    "activo": "Abamectina 18g/L",
+    "activo": "Abamectina 18 g/L",
     "categoria": "Insecticida - Acarisida",
     "presentacion": "LT",
     "precio": 70
   },
   {
     "producto": "ABSOLUTE X LT",
-    "proveedor": "",
-    "activo": "",
-    "categoria": "",
-    "presentacion": "",
-    "precio": 0
+    "proveedor": "FARMEX",
+    "activo": "Spinetoram 60 g/L",
+    "categoria": "Insectisida",
+    "presentacion": "LT",
+    "precio": 970
   },
   {
     "producto": "ABTIN X X LT",
-    "proveedor": "",
-    "activo": "",
-    "categoria": "",
-    "presentacion": "",
-    "precio": 0
+    "proveedor": "FARMEX",
+    "activo": "Abamectina 18 g/L",
+    "categoria": "Insecticida - Acarisida",
+    "presentacion": "LT",
+    "precio": 35
   },
   {
     "producto": "ACARMAX X LT",
-    "proveedor": "",
-    "activo": "",
+    "proveedor": "CAPEAGRO",
+    "activo": "Etoxazole 110 g/L",
     "categoria": "",
     "presentacion": "",
     "precio": 0
