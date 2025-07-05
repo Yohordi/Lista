@@ -1,11 +1,11 @@
 [
   {
     "producto": "ABAMEX X LT",
-    "proveedor": "",
-    "activo": "",
-    "categoria": "",
-    "presentacion": "",
-    "precio": 0
+    "proveedor": "FARMEX",
+    "activo": "Abamectina 18g/L",
+    "categoria": "Insecticida - Acarisida",
+    "presentacion": "LT",
+    "precio": 70.00
   },
   {
     "producto": "ABSOLUTE X LT",
@@ -822,5 +822,230 @@
     "categoria": "",
     "presentacion": "",
     "precio": 0
+  },
+  {
+    "producto": "MAXIM X 100 GRS",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "MEGA 20-20-20 X  20 LT",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "MEGA 20-20-20 X 5  LT",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "MEGA 20-20-20 X LT",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "MEGA ADHIERE X 10 LT",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "MEGA ADHIERE X 20 LT",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "MEGA ADHIERE X 5 LT",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "MEGA ADHIERE X LT",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "MEGA ALGAE X 20 LT",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "MEGA ALGAE X 5 LT",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "MEGA ALGAE X LT",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "MEGA AMINOALAGA",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "MEGA AMINOCID X 20 LT",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "MEGA AMINOCID X 5 LT",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "MEGA AMINOCID X LT",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "MEGA AMINOFOL X 20 LT",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "MEGA BORO X 10 LT",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "MEGA BORO X 20 LT",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "MEGA BORO X 5 LT",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "MEGA BORO X LT",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "MEGA CABZIN X 5 LT",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "MEGA CABZIN X LT",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "MEGA CABZINC X 20 LT",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "MEGA CACIUM AZUL X  5 LT",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "MEGA CALCIUM AZUL X LT",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "MEGA CALCIUM X 20 LT",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "MEGA CALCIUM X 5 LT",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "MEGA CALCIUM X LT",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
   }
 ]
+
