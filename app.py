@@ -164,4 +164,31 @@ if tipo_usuario == "Administrador":
                     json.dump(productos, f, indent=2, ensure_ascii=False)
                 st.success("🗑️ Producto eliminado.")
                 st.rerun()
+# --- Botón de impresión con clave ---
+st.markdown("---")
+st.markdown("### 🖨️ Imprimir listado (requiere clave)")
+
+if "clave_impresion_valida" not in st.session_state:
+    st.session_state.clave_impresion_valida = False
+
+if not st.session_state.clave_impresion_valida:
+    with st.expander("🔑 Ingresar clave para imprimir"):
+        clave_impresion = st.text_input("Clave de impresión", type="password", key="clave_impresion_input")
+        if st.button("✅ Validar clave de impresión"):
+            if clave_impresion == "2050":  # Clave establecida
+                st.session_state.clave_impresion_valida = True
+                st.success("✅ Clave correcta. Ya puedes imprimir.")
+                st.rerun()
+            else:
+                st.error("❌ Clave incorrecta.")
+else:
+    if st.button("🖨️ Imprimir listado"):
+        st.markdown("## 📄 Vista para impresión")
+        df_imp = pd.DataFrame(productos)
+        df_imp.columns = [col.upper() for col in df_imp.columns]
+        st.dataframe(df_imp.style.set_properties(**{
+            'font-size': '14px',
+            'font-family': 'Arial',
+            'border': '1px solid #ccc'
+        }), use_container_width=True)
 
