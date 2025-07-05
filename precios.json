@@ -1,58 +1,826 @@
 [
-   {"producto": "ABSOLUTE X LT", "proveedor": "FARMEX", "activo": "Abamectina 18g/LT", "categoria": "Insectisida", "presentacion": "LT", "precio": 5},
-  {"producto": "ABSOLUTE X LT", "proveedor": "FARMEX", "activo": "", "categoria": "", "presentacion": "", "precio": 0},
-  {"producto": "ABTIN X X LT", "proveedor": "FARMEX", "activo": "", "categoria": "", "presentacion": "", "precio": 0},
-  {"producto": "ACARMAX X LT", "proveedor": "CAPEAGRO", "activo": "", "categoria": "", "presentacion": "", "precio": 0},
-  {"producto": "ACARSTIN X LT", "proveedor": "NEOAGRUM", "activo": "", "categoria": "", "presentacion": "", "precio": 0},
-  {"producto": "ACIDO BORICO X 25 KG", "proveedor": "", "activo": "", "categoria": "", "presentacion": "", "precio": 0},
-  {"producto": "ACIDO CITRICO X 25 KG", "proveedor": "", "activo": "", "categoria": "", "presentacion": "", "precio": 0},
-  {"producto": "ACIDO FOSFORICO X 30 KG", "proveedor": "", "activo": "", "categoria": "", "presentacion": "", "precio": 0},
-  {"producto": "ACIDO FOSFORICO X 50 KG", "proveedor": "", "activo": "", "categoria": "", "presentacion": "", "precio": 0},
-  {"producto": "AGRIMECTIN X 20 LT", "proveedor": "", "activo": "", "categoria": "", "presentacion": "", "precio": 0},
-  {"producto": "AGRIMECTIN X 200 LT", "proveedor": "", "activo": "", "categoria": "", "presentacion": "", "precio": 0},
-  {"producto": "AGRIMECTIN X LT", "proveedor": "", "activo": "", "categoria": "", "presentacion": "", "precio": 0},
-  {"producto": "AGROSTEMIN X LT", "proveedor": "", "activo": "", "categoria": "", "presentacion": "", "precio": 0},
-  {"producto": "AKARIDOL X LT", "proveedor": "", "activo": "", "categoria": "", "presentacion": "", "precio": 0},
-  {"producto": "ALFAKLING X LT", "proveedor": "", "activo": "", "categoria": "", "presentacion": "", "precio": 0},
-  {"producto": "ALGARIUM X 10 LT", "proveedor": "", "activo": "", "categoria": "", "presentacion": "", "precio": 0},
-  {"producto": "ALGARIUM X LT", "proveedor": "", "activo": "", "categoria": "", "presentacion": "", "precio": 0},
-  {"producto": "ALGARIUM X LT", "proveedor": "", "activo": "", "categoria": "", "presentacion": "", "precio": 0},
-  {"producto": "ALGER TRIO X LT", "proveedor": "", "activo": "", "categoria": "", "presentacion": "", "precio": 0},
-  {"producto": "ALIETTE X KG", "proveedor": "", "activo": "", "categoria": "", "presentacion": "", "precio": 0},
-  {"producto": "AMAZOTE X 100 GR", "proveedor": "", "activo": "", "categoria": "", "presentacion": "", "precio": 0},
-  {"producto": "ANTRACOL X 10 KG", "proveedor": "", "activo": "", "categoria": "", "presentacion": "", "precio": 0},
-  {"producto": "ANTRACOL X KG", "proveedor": "", "activo": "", "categoria": "", "presentacion": "", "precio": 0},
-  {"producto": "ATTACK X KG", "proveedor": "", "activo": "", "categoria": "", "presentacion": "", "precio": 0}
-  {"producto": "BENLAFAR X KG", "proveedor": "", "activo": "", "categoria": "", "presentacion": "", "precio": 0},
-  {"producto": "BENZOMIL X 200 GR", "proveedor": "", "activo": "", "categoria": "", "presentacion": "", "precio": 0},
-  {"producto": "BETA-BAYTROIDE X LT", "proveedor": "", "activo": "", "categoria": "", "presentacion": "", "precio": 0},
-  {"producto": "BOMBER ULTRA 240 OD X LT", "proveedor": "", "activo": "", "categoria": "", "presentacion": "", "precio": 0},
-  {"producto": "BOMBER X LT", "proveedor": "", "activo": "", "categoria": "", "presentacion": "", "precio": 0},
-  {"producto": "BOTRIMEX X LT", "proveedor": "", "activo": "", "categoria": "", "presentacion": "", "precio": 0},
-  {"producto": "BRENON X LT", "proveedor": "", "activo": "", "categoria": "", "presentacion": "", "precio": 0},
-  {"producto": "BUMPER TOP X LT", "proveedor": "", "activo": "", "categoria": "", "presentacion": "", "precio": 0},
-  {"producto": "CAL40 X 10 LT", "proveedor": "", "activo": "", "categoria": "", "presentacion": "", "precio": 0},
-  {"producto": "CAL40 X LT", "proveedor": "", "activo": "", "categoria": "", "presentacion": "", "precio": 0},
-  {"producto": "CALCITOP X 20 LT", "proveedor": "", "activo": "", "categoria": "", "presentacion": "", "precio": 0},
-  {"producto": "CAPITHAN X LT", "proveedor": "", "activo": "", "categoria": "", "presentacion": "", "precio": 0},
-  {"producto": "CARBOXY K X LT", "proveedor": "", "activo": "", "categoria": "", "presentacion": "", "precio": 0},
-  {"producto": "CARBOXY MN X LT", "proveedor": "", "activo": "", "categoria": "", "presentacion": "", "precio": 0},
-  {"producto": "CARDAZINA X LT", "proveedor": "", "activo": "", "categoria": "", "presentacion": "", "precio": 0},
-  {"producto": "CARILE X LT", "proveedor": "", "activo": "", "categoria": "", "presentacion": "", "precio": 0},
-  {"producto": "CERATRAP X 20 LT", "proveedor": "", "activo": "", "categoria": "", "presentacion": "", "precio": 0},
-  {"producto": "CICLON X LT", "proveedor": "", "activo": "", "categoria": "", "presentacion": "", "precio": 0},
-  {"producto": "CITRATO DE POTASIO X 20 LT", "proveedor": "", "activo": "", "categoria": "", "presentacion": "", "precio": 0},
-  {"producto": "CLORURO DE CALCIO QUAGRAL X 25 KG", "proveedor": "", "activo": "", "categoria": "", "presentacion": "", "precio": 0},
-  {"producto": "CLORURO DE POTASIO GRANULADO X 50 KG", "proveedor": "", "activo": "", "categoria": "", "presentacion": "", "precio": 0},
-  {"producto": "CLORURO DE POTASIO ROMERO X 50 KG", "proveedor": "", "activo": "", "categoria": "", "presentacion": "", "precio": 0},
-  {"producto": "COACH X LT", "proveedor": "", "activo": "", "categoria": "", "presentacion": "", "precio": 0},
-  {"producto": "COMPUESTO ROMERO 20-20-20 X 50 KG", "proveedor": "", "activo": "", "categoria": "", "presentacion": "", "precio": 0},
-  {"producto": "CONFIEE 325 X LT", "proveedor": "", "activo": "", "categoria": "", "presentacion": "", "precio": 0},
-  {"producto": "CONSERVE X 100 GR", "proveedor": "", "activo": "", "categoria": "", "presentacion": "", "precio": 0},
-  {"producto": "CONTROLLER X 100 GR", "proveedor": "", "activo": "", "categoria": "", "presentacion": "", "precio": 0},
-  {"producto": "CORAGEN X 200 ML", "proveedor": "", "activo": "", "categoria": "", "presentacion": "", "precio": 0},
-  {"producto": "COSAVET X 25 KG", "proveedor": "", "activo": "", "categoria": "", "presentacion": "", "precio": 0},
-  {"producto": "CYMBAZ X 500 ML", "proveedor": "", "activo": "", "categoria": "", "presentacion": "", "precio": 0},
-  {"producto": "CYMBAZ X LT", "proveedor": "", "activo": "", "categoria": "", "presentacion": "", "precio": 0}
+  {
+    "producto": "ABAMEX X LT",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "ABSOLUTE X LT",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "ABTIN X X LT",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "ACARMAX X LT",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "ACARSTIN X LT",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "ACIDO BORICO  X 25 KG",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "ACIDO CITRICO X 25 KG",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "ACIDO FOSFORICO X 30 KG",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "ACIDO FOSFORICO X 50 KG",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "AGRIMECTIN X  20 LT",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "AGRIMECTIN X  200 LT",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "AGRIMECTIN X LT",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "AGROSTEMIN X LT",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "AKARIDOL X LT",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "ALFAKLING X LT",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "ALGARIUM X 10 LT",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "ALGARIUM X LT",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "ALGARIUM X LT",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "ALGER TRIO X LT",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "ALIETTE X KG",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "AMAZOTE X 100 GR",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "ANTRACOL X 10 KG",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "ANTRACOL X KG",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "ANULADO",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "ATP UP X LT",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "ATTACK X KG",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "BENLAFAR X KG",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "BENZOMIL X 200 GR",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "BETA-BAYTROIDE X LT",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "BOMBER ULTRA 240 OD X LT",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "BOMBER X LT",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "BOTRIMEX X LT",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "BRENON  X LT",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "BUMPER TOP X LT",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "CAL40 X 10 LT",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "CAL40 X LT",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "CALCITOP X 20  LT",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "CAPITHAN X LT",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "CARBOXY K X LT",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "CARBOXY MN X LT",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "CARDAZINA X LT",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "CARILE X LT",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "CERATRAP X 20 LT",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "CICLON X LT",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "CITRATO DE POTASIO X 20 LT",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "CLORURO DE CALCIO QUAGRAL X 25 KG",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "CLORURO DE POTASIO GRANULADO X 50 KG",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "CLORURO DE POTASIO ROMERO X 50 KG",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "COACH X LT",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "COMPUESTO ROMERO 20-20-20 X 50 KG",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "CONFIEE 325 X LT",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "CONSERVE X 100 GR",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "CONTROLLER X 100 GR",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "CORAGEN X 200 ML",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "COSAVET X 25 KG",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "CYMBAZ X 500 ML",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "CYMBAZ X LT",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "DACONIL X LT",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "DAKAR X 100 GR",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "DELTA X 100 ML",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "DELTACROP X LT",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "DELTOX X LT",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "DETOQUE X LT",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "DUELO X LT",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "EVITANE X KG",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "FALUMIN X KG",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "FARMEZIN X LT",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "FERTIBAGRA X 25 KG",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "FERTYBASE MAP 25 KG",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "FERTYBASE NITRATO DE MAGNESIO X 25 KG",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "FERTYBASE SOP 25 KG",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "FERTYBASE SULFATO DE MAGNESIO X 25 KG",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "FITOKLIN X KG",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "FLOZINA X LT",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "FLUMET X LT",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "FOLICUR X LT",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "FOSFATO DIAMONICO ROMERO X 50 KG",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "FOSFATO MONOAMONICO FERROSALT X 25 KG",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "FOSFATO MONOAMONICO ROMERO X 25 KG",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "FREEBAK X LT",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "FRUIT XL X LT",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "FUZZIL X 100 GR",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "GARDEN BROWN X 20 LT",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "GARDEN BROWN X 200 LT",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "GARDEN BROWN X 5 LT",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "GARDEN BROWN X LT",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "GENDARME MAX X 125 GR",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "GF 120 X 4 LT",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "HIDROXIDO DE POTASIO X 25 KG",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "HOOK X 200 GR",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "ICLORAZ X LT",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "ITACUR X KG",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "ITADATE X LT",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "JARDANI X 100 GR",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "KIESERITA ROMERO X 50 KG",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "KING PHOS X 25 KG",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "K-LIBRADOR X LT",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "KUROMIL X 100 GR",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "LAMBFAST X 250 ML",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "LAMPA X UND",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "LEGADO X LT",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "MALLKI X 25 KG",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  },
+  {
+    "producto": "MARFIL TOP X LT",
+    "proveedor": "",
+    "activo": "",
+    "categoria": "",
+    "presentacion": "",
+    "precio": 0
+  }
 ]
-
