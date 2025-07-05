@@ -27,25 +27,25 @@
     "producto": "ACARMAX X LT",
     "proveedor": "CAPEAGRO",
     "activo": "Etoxazole 110 g/L",
-    "categoria": "",
-    "presentacion": "",
-    "precio": 0
+    "categoria": "Acaricida",
+    "presentacion": "LT",
+    "precio": 330
   },
   {
     "producto": "ACARSTIN X LT",
-    "proveedor": "",
-    "activo": "",
-    "categoria": "",
-    "presentacion": "",
-    "precio": 0
+    "proveedor": "NEOAGRUM",
+    "activo": "Cyhexatin 600 g/L",
+    "categoria": "Acarisida",
+    "presentacion": "LT",
+    "precio": 260
   },
   {
     "producto": "ACIDO BORICO  X 25 KG",
-    "proveedor": "",
-    "activo": "",
-    "categoria": "",
-    "presentacion": "",
-    "precio": 0
+    "proveedor": "INKAFER",
+    "activo": "BORO",
+    "categoria": "Fertilizante",
+    "presentacion": "SACO",
+    "precio": 125
   },
   {
     "producto": "ACIDO CITRICO X 25 KG",
@@ -1665,19 +1665,19 @@
 },
 {
   "producto": "NITRATO DE AMONIO X 50 KG",
-  "proveedor": "",
-  "activo": "",
-  "categoria": "",
-  "presentacion": "",
-  "precio": 0
+  "proveedor": "EQUILIBRA",
+  "activo": "33N-3(P2O5)",
+  "categoria": "Fertilizante",
+  "presentacion": "SACO",
+  "precio": 96
 },
 {
   "producto": "NITRATO DE CALCIO  X 25 KG",
-  "proveedor": "",
-  "activo": "",
-  "categoria": "",
-  "presentacion": "",
-  "precio": 0
+  "proveedor": "EQUILIBRA",
+  "activo": "15.5N-26CaO",
+  "categoria": "Fertilizante",
+  "presentacion": "SACO",
+  "precio": 55
 },
 {
   "producto": "NITRATO DE MAGNESIO  X 25 KG",
