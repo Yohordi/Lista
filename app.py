@@ -166,26 +166,31 @@ if tipo_usuario == "Administrador":
                     json.dump(productos, f, indent=2, ensure_ascii=False)
                 st.success("🗑️ Producto eliminado.")
                 st.rerun()
-st.markdown("### 🖨️ Exportar listado a PDF")
+st.markdown("### 🔒 Descargar PDF con clave")
 
-if st.button("📥 Descargar PDF"):
-    pdf = FPDF()
-    pdf.add_page()
-    pdf.set_font("Arial", size=12)
-    pdf.cell(200, 10, txt="Listado de Precios", ln=True, align="C")
-    pdf.ln(10)
+with st.expander("🔐 Ingresar clave para exportar PDF"):
+    clave_pdf = st.text_input("Ingrese la clave para imprimir", type="password")
 
-    for p in resultados:
-        linea = f"{p['producto']} - S/ {p['precio']}"
-        pdf.cell(200, 8, txt=linea, ln=True)
+    if clave_pdf == "2050":
+        if st.button("📥 Descargar PDF"):
+            pdf = FPDF()
+            pdf.add_page()
+            pdf.set_font("Arial", size=12)
+            pdf.cell(200, 10, txt="Listado de Precios", ln=True, align="C")
+            pdf.ln(10)
 
-    # Crear archivo temporal PDF
-    with tempfile.NamedTemporaryFile(delete=False, suffix=".pdf") as tmpfile:
-        pdf.output(tmpfile.name)
-        with open(tmpfile.name, "rb") as f:
-            st.download_button(
-                label="📄 Descargar PDF",
-                data=f,
-                file_name="listado_precios.pdf",
-                mime="application/pdf"
-            )
+            for p in resultados:
+                linea = f"{p['producto']} - S/ {p['precio']}"
+                pdf.cell(200, 8, txt=linea, ln=True)
+
+            with tempfile.NamedTemporaryFile(delete=False, suffix=".pdf") as tmpfile:
+                pdf.output(tmpfile.name)
+                with open(tmpfile.name, "rb") as f:
+                    st.download_button(
+                        label="📄 Descargar PDF",
+                        data=f,
+                        file_name="listado_precios.pdf",
+                        mime="application/pdf"
+                    )
+    elif clave_pdf and clave_pdf != "2050":
+        st.error("❌ Clave incorrecta.")
