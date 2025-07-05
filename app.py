@@ -166,9 +166,9 @@ if tipo_usuario == "Administrador":
                     json.dump(productos, f, indent=2, ensure_ascii=False)
                 st.success("🗑️ Producto eliminado.")
                 st.rerun()
-# --- Botón de impresión con clave ---
+# --- Botón de impresión con clave y descarga PDF ---
 st.markdown("---")
-st.markdown("### 🖨️ Imprimir listado (requiere clave)")
+st.markdown("### 🖨️ Descargar PDF del listado (requiere clave)")
 
 if "clave_impresion_valida" not in st.session_state:
     st.session_state.clave_impresion_valida = False
@@ -177,20 +177,30 @@ if not st.session_state.clave_impresion_valida:
     with st.expander("🔑 Ingresar clave para imprimir"):
         clave_impresion = st.text_input("Clave de impresión", type="password", key="clave_impresion_input")
         if st.button("✅ Validar clave de impresión"):
-            if clave_impresion == "2050":  # Clave establecida
+            if clave_impresion == "2050":
                 st.session_state.clave_impresion_valida = True
-                st.success("✅ Clave correcta. Ya puedes imprimir.")
+                st.success("✅ Clave correcta. Ya puedes descargar el PDF.")
                 st.rerun()
             else:
                 st.error("❌ Clave incorrecta.")
 else:
-    if st.button("🖨️ Imprimir listado"):
-        st.markdown("## 📄 Vista para impresión")
-        df_imp = pd.DataFrame(productos)
-        df_imp.columns = [col.upper() for col in df_imp.columns]
-        st.dataframe(df_imp.style.set_properties(**{
-            'font-size': '14px',
-            'font-family': 'Arial',
-            'border': '1px solid #ccc'
-        }), use_container_width=True)
+    if st.button("📄 Generar PDF"):
+        # Crear PDF
+        pdf = FPDF()
+        pdf.add_page()
+        pdf.set_font("Arial", size=10)
+        pdf.cell(200, 10, txt="Listado de Precios", ln=True, align='C')
+        pdf.ln(5)
+
+        for p in productos:
+            linea = f"{p['producto']} - {p['proveedor']} - {p['activo']} - {p['categoria']} - {p['presentacion']} - S/ {p['precio']}"
+            pdf.multi_cell(0, 7, linea)
+
+        # Guardar PDF temporal
+        with tempfile.NamedTemporaryFile(delete=False, suffix=".pdf") as tmpfile:
+            pdf.output(tmpfile.name)
+            st.success("✅ PDF generado correctamente.")
+            with open(tmpfile.name, "rb") as f:
+                st.download_button("⬇️ Descargar PDF", f, file_name="listado_precios.pdf")
+
 
