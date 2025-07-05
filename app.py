@@ -166,41 +166,26 @@ if tipo_usuario == "Administrador":
                     json.dump(productos, f, indent=2, ensure_ascii=False)
                 st.success("🗑️ Producto eliminado.")
                 st.rerun()
-# --- Botón de impresión con clave y descarga PDF ---
-st.markdown("---")
-st.markdown("### 🖨️ Descargar PDF del listado (requiere clave)")
+st.markdown("### 🖨️ Exportar listado a PDF")
 
-if "clave_impresion_valida" not in st.session_state:
-    st.session_state.clave_impresion_valida = False
+if st.button("📥 Descargar PDF"):
+    pdf = FPDF()
+    pdf.add_page()
+    pdf.set_font("Arial", size=12)
+    pdf.cell(200, 10, txt="Listado de Precios", ln=True, align="C")
+    pdf.ln(10)
 
-if not st.session_state.clave_impresion_valida:
-    with st.expander("🔑 Ingresar clave para imprimir"):
-        clave_impresion = st.text_input("Clave de impresión", type="password", key="clave_impresion_input")
-        if st.button("✅ Validar clave de impresión"):
-            if clave_impresion == "2050":
-                st.session_state.clave_impresion_valida = True
-                st.success("✅ Clave correcta. Ya puedes descargar el PDF.")
-                st.rerun()
-            else:
-                st.error("❌ Clave incorrecta.")
-else:
-    if st.button("📄 Generar PDF"):
-        # Crear PDF
-        pdf = FPDF()
-        pdf.add_page()
-        pdf.set_font("Arial", size=10)
-        pdf.cell(200, 10, txt="Listado de Precios", ln=True, align='C')
-        pdf.ln(5)
+    for p in resultados:
+        linea = f"{p['producto']} - S/ {p['precio']}"
+        pdf.cell(200, 8, txt=linea, ln=True)
 
-        for p in productos:
-            linea = f"{p['producto']} - {p['proveedor']} - {p['activo']} - {p['categoria']} - {p['presentacion']} - S/ {p['precio']}"
-            pdf.multi_cell(0, 7, linea)
-
-        # Guardar PDF temporal
-        with tempfile.NamedTemporaryFile(delete=False, suffix=".pdf") as tmpfile:
-            pdf.output(tmpfile.name)
-            st.success("✅ PDF generado correctamente.")
-            with open(tmpfile.name, "rb") as f:
-                st.download_button("⬇️ Descargar PDF", f, file_name="listado_precios.pdf")
-
-
+    # Crear archivo temporal PDF
+    with tempfile.NamedTemporaryFile(delete=False, suffix=".pdf") as tmpfile:
+        pdf.output(tmpfile.name)
+        with open(tmpfile.name, "rb") as f:
+            st.download_button(
+                label="📄 Descargar PDF",
+                data=f,
+                file_name="listado_precios.pdf",
+                mime="application/pdf"
+            )
