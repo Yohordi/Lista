@@ -49,51 +49,51 @@
   },
   {
     "producto": "ACIDO CITRICO X 25 KG",
-    "proveedor": "",
-    "activo": "",
-    "categoria": "",
-    "presentacion": "",
+    "proveedor": "-",
+    "activo": "-",
+    "categoria": "Fertilizante",
+    "presentacion": "SACO",
     "precio": 0
   },
   {
     "producto": "ACIDO FOSFORICO X 30 KG",
-    "proveedor": "",
-    "activo": "",
-    "categoria": "",
-    "presentacion": "",
-    "precio": 0
+    "proveedor": "EQUILIBRA",
+    "activo": "61% P2O5",
+    "categoria": "Fertilizante",
+    "presentacion": "BDN",
+    "precio": 240
   },
   {
     "producto": "ACIDO FOSFORICO X 50 KG",
-    "proveedor": "",
-    "activo": "",
-    "categoria": "",
-    "presentacion": "",
-    "precio": 0
+    "proveedor": "MOLINOS",
+    "activo": "61 % (P2O5)",
+    "categoria": "Fertilizante",
+    "presentacion": "BDN",
+    "precio": 395
   },
   {
     "producto": "AGRIMECTIN X  20 LT",
-    "proveedor": "",
-    "activo": "",
-    "categoria": "",
-    "presentacion": "",
-    "precio": 0
+    "proveedor": "ITAGRO",
+    "activo": "Abamectina 18 g/L",
+    "categoria": "Insecticida - Acaricida",
+    "presentacion": "BDN",
+    "precio": 600
   },
   {
     "producto": "AGRIMECTIN X  200 LT",
-    "proveedor": "",
-    "activo": "",
-    "categoria": "",
-    "presentacion": "",
-    "precio": 0
+    "proveedor": "ITAGRO",
+    "activo": "Abamectina 18 g/L",
+    "categoria": "Insecticida - Acaricida",
+    "presentacion": "BDN",
+    "precio": 5800
   },
   {
     "producto": "AGRIMECTIN X LT",
-    "proveedor": "",
-    "activo": "",
-    "categoria": "",
-    "presentacion": "",
-    "precio": 0
+    "proveedor": "ITAGRO",
+    "activo": "Abamectina 18 g/L",
+    "categoria": "Insecticida - Acaricida",
+    "presentacion": "BDN",
+    "precio": 35
   },
   {
     "producto": "AGROSTEMIN X LT",
