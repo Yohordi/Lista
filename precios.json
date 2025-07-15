@@ -84,7 +84,7 @@
     "proveedor": "ITAGRO",
     "activo": "Abamectina 18 g/L",
     "categoria": "Insecticida - Acaricida",
-    "presentacion": "BDN",
+    "presentacion": "CIL",
     "precio": 5800
   },
   {
@@ -92,7 +92,7 @@
     "proveedor": "ITAGRO",
     "activo": "Abamectina 18 g/L",
     "categoria": "Insecticida - Acaricida",
-    "presentacion": "BDN",
+    "presentacion": "LT",
     "precio": 35
   },
   {
@@ -113,35 +113,27 @@
   },
   {
     "producto": "ALFAKLING X LT",
-    "proveedor": "",
-    "activo": "",
-    "categoria": "",
-    "presentacion": "",
-    "precio": 0
+    "proveedor": "AGROKLINGE",
+    "activo": "Alpha cypermethrina 100 g/L + Ciclohexanona 815 g/L",
+    "categoria": "Insecticida",
+    "presentacion": "LT",
+    "precio": 55
   },
   {
     "producto": "ALGARIUM X 10 LT",
-    "proveedor": "",
-    "activo": "",
-    "categoria": "",
-    "presentacion": "",
-    "precio": 0
+    "proveedor": "EQUILIBRA",
+    "activo": "100 % ascophyllum nodosum",
+    "categoria": "Bioestimunte",
+    "presentacion": "GLN",
+    "precio": 550
   },
   {
     "producto": "ALGARIUM X LT",
-    "proveedor": "",
-    "activo": "",
-    "categoria": "",
-    "presentacion": "",
-    "precio": 0
-  },
-  {
-    "producto": "ALGARIUM X LT",
-    "proveedor": "",
-    "activo": "",
-    "categoria": "",
-    "presentacion": "",
-    "precio": 0
+    "proveedor": "EQUILIBRA",
+    "activo": "100 % ascophyllum nodosum",
+    "categoria": "Bioestimunte",
+    "presentacion": "LT",
+    "precio": 60
   },
   {
     "producto": "ALGER TRIO X LT",
