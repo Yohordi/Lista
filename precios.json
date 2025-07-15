@@ -3,7 +3,7 @@
     "producto": "ABAMEX X LT",
     "proveedor": "FARMEX",
     "activo": "Abamectina 18 g/L",
-    "categoria": "Insecticida - Acarisida",
+    "categoria": "Insecticida - Acaricida",
     "presentacion": "LT",
     "precio": 70
   },
@@ -11,7 +11,7 @@
     "producto": "ABSOLUTE X LT",
     "proveedor": "FARMEX",
     "activo": "Spinetoram 60 g/L",
-    "categoria": "Insectisida",
+    "categoria": "Insecticida",
     "presentacion": "LT",
     "precio": 970
   },
@@ -19,7 +19,7 @@
     "producto": "ABTIN X X LT",
     "proveedor": "FARMEX",
     "activo": "Abamectina 18 g/L",
-    "categoria": "Insecticida - Acarisida",
+    "categoria": "Insecticida - Acaricida",
     "presentacion": "LT",
     "precio": 35
   },
@@ -97,18 +97,18 @@
   },
   {
     "producto": "AGROSTEMIN X LT",
-    "proveedor": "",
-    "activo": "",
-    "categoria": "",
-    "presentacion": "",
-    "precio": 0
+    "proveedor": "SERFI",
+    "activo": "Materia organica",
+    "categoria": "Bioestimulante",
+    "presentacion": "LT",
+    "precio": 160
   },
   {
     "producto": "AKARIDOL X LT",
-    "proveedor": "",
-    "activo": "",
-    "categoria": "",
-    "presentacion": "",
+    "proveedor": "SICSAC",
+    "activo": "Fenpyroximate 100 g/L+ Etoxazole 88 g/L",
+    "categoria": "Acaricida",
+    "presentacion": "LT",
     "precio": 0
   },
   {
@@ -1864,6 +1864,14 @@
   "precio": 0
 },
 {
+  "producto": "QUETIN X LT",
+  "proveedor": "ADAMA",
+  "activo": "Abamectina 18 ",
+  "categoria": "",
+  "presentacion": "",
+  "precio": 0
+},
+{
   "producto": "RADIAN X 100 GR",
   "proveedor": "",
   "activo": "",
@@ -2128,7 +2136,7 @@
   "precio": 0
 },
 {
-  "producto": "SULFATO DE AMONIO ROMERO X 50 KG",
+  "producto": "SULFATO DE AMONIO X 50 KG",
   "proveedor": "",
   "activo": "",
   "categoria": "",
