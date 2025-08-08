@@ -86,7 +86,7 @@ resultados = [
 
 # --- Mostrar resultados ---
 if resultados:
-    st.markdown("### 📋 **RESULTADOS**")
+    st.markdown("### 📋 **Precios**")
     df = pd.DataFrame(resultados)
     df.columns = [col.upper() for col in df.columns]
     st.dataframe(df.style.set_properties(**{'font-weight': 'bold'}), use_container_width=True)
