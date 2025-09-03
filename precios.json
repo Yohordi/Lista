@@ -1525,7 +1525,7 @@
     "activo": "",
     "categoria": "",
     "presentacion": "",
-    "precio": 0
+    "precio": 350
   },
   {
     "producto": "MEGA ZINC X 5 LT",
@@ -1709,7 +1709,7 @@
   "activo": "",
   "categoria": "",
   "presentacion": "",
-  "precio": 
+  "precio": 0
 },
 {
   "producto": "PACKHARD X LT",
@@ -2448,6 +2448,7 @@
   "precio": 30
 }
 ]
+
 
 
 
