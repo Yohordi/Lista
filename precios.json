@@ -137,19 +137,19 @@
   },
   {
     "producto": "ALGER TRIO X LT",
-    "proveedor": "",
-    "activo": "",
-    "categoria": "",
-    "presentacion": "",
-    "precio": 0
+    "proveedor": "AGREVO",
+    "activo": "TRIHORMONAL",
+    "categoria": "X",
+    "presentacion": "LT",
+    "precio": 140
   },
   {
     "producto": "ALIETTE X KG",
-    "proveedor": "",
-    "activo": "",
-    "categoria": "",
-    "presentacion": "",
-    "precio": 0
+    "proveedor": "BAYER",
+    "activo": "FOSETYL DE ALUMINIO",
+    "categoria": "FUNGICIDA",
+    "presentacion": "KG",
+    "precio": 70
   },
   {
     "producto": "AMAZOTE X 100 GR",
@@ -2456,3 +2456,4 @@
   "precio": 0
 }
 ]
+
