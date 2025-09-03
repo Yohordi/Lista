@@ -53,7 +53,7 @@
     "activo": "-",
     "categoria": "Fertilizante",
     "presentacion": "SACO",
-    "precio": 0
+    "precio": 180
   },
   {
     "producto": "ACIDO FOSFORICO X 30 KG",
@@ -69,7 +69,7 @@
     "activo": "61 % (P2O5)",
     "categoria": "Fertilizante",
     "presentacion": "BDN",
-    "precio": 395
+    "precio": 390
   },
   {
     "producto": "AGRIMECTIN X  20 LT",
@@ -109,7 +109,7 @@
     "activo": "Fenpyroximate 100 g/L+ Etoxazole 88 g/L",
     "categoria": "Acaricida",
     "presentacion": "LT",
-    "precio": 0
+    "precio": 350
   },
   {
     "producto": "ALFAKLING X LT",
@@ -157,7 +157,7 @@
     "activo": "",
     "categoria": "",
     "presentacion": "",
-    "precio": 0
+    "precio": 17
   },
   {
     "producto": "ANTRACOL X 10 KG",
@@ -165,7 +165,7 @@
     "activo": "",
     "categoria": "",
     "presentacion": "",
-    "precio": 0
+    "precio": 450
   },
   {
     "producto": "ANTRACOL X KG",
@@ -173,15 +173,7 @@
     "activo": "",
     "categoria": "",
     "presentacion": "",
-    "precio": 0
-  },
-  {
-    "producto": "ANULADO",
-    "proveedor": "",
-    "activo": "",
-    "categoria": "",
-    "presentacion": "",
-    "precio": 0
+    "precio": 55
   },
   {
     "producto": "ATP UP X LT",
@@ -189,7 +181,7 @@
     "activo": "",
     "categoria": "",
     "presentacion": "",
-    "precio": 0
+    "precio": 70
   },
   {
     "producto": "ATTACK X KG",
@@ -197,7 +189,7 @@
     "activo": "",
     "categoria": "",
     "presentacion": "",
-    "precio": 0
+    "precio": 65
   },
   {
     "producto": "BENLAFAR X KG",
@@ -205,7 +197,7 @@
     "activo": "",
     "categoria": "",
     "presentacion": "",
-    "precio": 0
+    "precio": 130
   },
   {
     "producto": "BENZOMIL X 200 GR",
@@ -213,7 +205,7 @@
     "activo": "",
     "categoria": "",
     "presentacion": "",
-    "precio": 0
+    "precio": 25
   },
   {
     "producto": "BETA-BAYTROIDE X LT",
@@ -221,7 +213,7 @@
     "activo": "",
     "categoria": "",
     "presentacion": "",
-    "precio": 0
+    "precio": 185
   },
   {
     "producto": "BOMBER ULTRA 240 OD X LT",
@@ -229,7 +221,7 @@
     "activo": "",
     "categoria": "",
     "presentacion": "",
-    "precio": 0
+    "precio": 660
   },
   {
     "producto": "BOMBER X LT",
@@ -237,7 +229,7 @@
     "activo": "",
     "categoria": "",
     "presentacion": "",
-    "precio": 0
+    "precio": 610
   },
   {
     "producto": "BOTRIMEX X LT",
@@ -245,7 +237,7 @@
     "activo": "",
     "categoria": "",
     "presentacion": "",
-    "precio": 0
+    "precio": 48
   },
   {
     "producto": "BRENON  X LT",
@@ -253,7 +245,7 @@
     "activo": "",
     "categoria": "",
     "presentacion": "",
-    "precio": 0
+    "precio": 300
   },
   {
     "producto": "BUMPER TOP X LT",
@@ -261,7 +253,7 @@
     "activo": "",
     "categoria": "",
     "presentacion": "",
-    "precio": 0
+    "precio": 240
   },
   {
     "producto": "CAL40 X 10 LT",
@@ -269,7 +261,7 @@
     "activo": "",
     "categoria": "",
     "presentacion": "",
-    "precio": 0
+    "precio": 500
   },
   {
     "producto": "CAL40 X LT",
@@ -277,7 +269,7 @@
     "activo": "",
     "categoria": "",
     "presentacion": "",
-    "precio": 0
+    "precio": 50
   },
   {
     "producto": "CALCITOP X 20  LT",
@@ -285,7 +277,7 @@
     "activo": "",
     "categoria": "",
     "presentacion": "",
-    "precio": 0
+    "precio": 330
   },
   {
     "producto": "CAPITHAN X LT",
@@ -293,7 +285,7 @@
     "activo": "",
     "categoria": "",
     "presentacion": "",
-    "precio": 0
+    "precio": 130
   },
   {
     "producto": "CARBOXY K X LT",
@@ -301,7 +293,7 @@
     "activo": "",
     "categoria": "",
     "presentacion": "",
-    "precio": 0
+    "precio": 45
   },
   {
     "producto": "CARBOXY MN X LT",
@@ -309,7 +301,7 @@
     "activo": "",
     "categoria": "",
     "presentacion": "",
-    "precio": 0
+    "precio": 45
   },
   {
     "producto": "CARDAZINA X LT",
@@ -317,7 +309,7 @@
     "activo": "",
     "categoria": "",
     "presentacion": "",
-    "precio": 0
+    "precio": 45
   },
   {
     "producto": "CARILE X LT",
@@ -325,7 +317,7 @@
     "activo": "",
     "categoria": "",
     "presentacion": "",
-    "precio": 0
+    "precio": 300
   },
   {
     "producto": "CERATRAP X 20 LT",
@@ -333,7 +325,7 @@
     "activo": "",
     "categoria": "",
     "presentacion": "",
-    "precio": 0
+    "precio": 850
   },
   {
     "producto": "CICLON X LT",
@@ -341,7 +333,7 @@
     "activo": "",
     "categoria": "",
     "presentacion": "",
-    "precio": 0
+    "precio": 55
   },
   {
     "producto": "CITRATO DE POTASIO X 20 LT",
@@ -357,7 +349,7 @@
     "activo": "",
     "categoria": "",
     "presentacion": "",
-    "precio": 0
+    "precio": 150
   },
   {
     "producto": "CLORURO DE POTASIO GRANULADO X 50 KG",
@@ -365,7 +357,7 @@
     "activo": "",
     "categoria": "",
     "presentacion": "",
-    "precio": 0
+    "precio": 120
   },
   {
     "producto": "CLORURO DE POTASIO ROMERO X 50 KG",
@@ -373,7 +365,7 @@
     "activo": "",
     "categoria": "",
     "presentacion": "",
-    "precio": 0
+    "precio": 120
   },
   {
     "producto": "COACH X LT",
@@ -381,7 +373,7 @@
     "activo": "",
     "categoria": "",
     "presentacion": "",
-    "precio": 0
+    "precio": 160
   },
   {
     "producto": "COMPUESTO ROMERO 20-20-20 X 50 KG",
@@ -389,7 +381,7 @@
     "activo": "",
     "categoria": "",
     "presentacion": "",
-    "precio": 0
+    "precio": 130
   },
   {
     "producto": "CONFIEE 325 X LT",
@@ -397,7 +389,7 @@
     "activo": "",
     "categoria": "",
     "presentacion": "",
-    "precio": 0
+    "precio": 240
   },
   {
     "producto": "CONSERVE X 100 GR",
@@ -405,7 +397,7 @@
     "activo": "",
     "categoria": "",
     "presentacion": "",
-    "precio": 0
+    "precio": 70
   },
   {
     "producto": "CONTROLLER X 100 GR",
@@ -413,7 +405,7 @@
     "activo": "",
     "categoria": "",
     "presentacion": "",
-    "precio": 0
+    "precio": 28
   },
   {
     "producto": "CORAGEN X 200 ML",
@@ -421,7 +413,7 @@
     "activo": "",
     "categoria": "",
     "presentacion": "",
-    "precio": 0
+    "precio": 300
   },
   {
     "producto": "COSAVET X 25 KG",
@@ -429,7 +421,7 @@
     "activo": "",
     "categoria": "",
     "presentacion": "",
-    "precio": 0
+    "precio": 320
   },
   {
     "producto": "CYMBAZ X 500 ML",
@@ -437,7 +429,7 @@
     "activo": "",
     "categoria": "",
     "presentacion": "",
-    "precio": 0
+    "precio": 25
   },
   {
     "producto": "CYMBAZ X LT",
@@ -445,7 +437,7 @@
     "activo": "",
     "categoria": "",
     "presentacion": "",
-    "precio": 0
+    "precio": 50
   },
   {
     "producto": "DACONIL X LT",
@@ -453,7 +445,7 @@
     "activo": "",
     "categoria": "",
     "presentacion": "",
-    "precio": 0
+    "precio": 65
   },
   {
     "producto": "DAKAR X 100 GR",
@@ -461,7 +453,7 @@
     "activo": "",
     "categoria": "",
     "presentacion": "",
-    "precio": 0
+    "precio": 50
   },
   {
     "producto": "DELTA X 100 ML",
@@ -477,7 +469,7 @@
     "activo": "",
     "categoria": "",
     "presentacion": "",
-    "precio": 0
+    "precio": 80
   },
   {
     "producto": "DELTOX X LT",
@@ -485,7 +477,7 @@
     "activo": "",
     "categoria": "",
     "presentacion": "",
-    "precio": 0
+    "precio": 85
   },
   {
     "producto": "DETOQUE X LT",
@@ -493,7 +485,7 @@
     "activo": "",
     "categoria": "",
     "presentacion": "",
-    "precio": 0
+    "precio": 150
   },
   {
     "producto": "DUELO X LT",
@@ -501,7 +493,7 @@
     "activo": "",
     "categoria": "",
     "presentacion": "",
-    "precio": 0
+    "precio": 110
   },
   {
     "producto": "EVITANE X KG",
@@ -509,7 +501,7 @@
     "activo": "",
     "categoria": "",
     "presentacion": "",
-    "precio": 0
+    "precio": 30
   },
   {
     "producto": "FALUMIN X KG",
@@ -517,7 +509,7 @@
     "activo": "",
     "categoria": "",
     "presentacion": "",
-    "precio": 0
+    "precio": 100
   },
   {
     "producto": "FARMEZIN X LT",
@@ -525,7 +517,7 @@
     "activo": "",
     "categoria": "",
     "presentacion": "",
-    "precio": 0
+    "precio": 28
   },
   {
     "producto": "FERTIBAGRA X 25 KG",
@@ -541,7 +533,7 @@
     "activo": "",
     "categoria": "",
     "presentacion": "",
-    "precio": 0
+    "precio": 140
   },
   {
     "producto": "FERTYBASE NITRATO DE MAGNESIO X 25 KG",
@@ -549,7 +541,7 @@
     "activo": "",
     "categoria": "",
     "presentacion": "",
-    "precio": 0
+    "precio": 65
   },
   {
     "producto": "FERTYBASE SOP 25 KG",
@@ -557,7 +549,7 @@
     "activo": "",
     "categoria": "",
     "presentacion": "",
-    "precio": 0
+    "precio": 100
   },
   {
     "producto": "FERTYBASE SULFATO DE MAGNESIO X 25 KG",
@@ -565,7 +557,7 @@
     "activo": "",
     "categoria": "",
     "presentacion": "",
-    "precio": 0
+    "precio": 30
   },
   {
     "producto": "FITOKLIN X KG",
@@ -573,7 +565,7 @@
     "activo": "",
     "categoria": "",
     "presentacion": "",
-    "precio": 0
+    "precio": 210
   },
   {
     "producto": "FLOZINA X LT",
@@ -581,7 +573,7 @@
     "activo": "",
     "categoria": "",
     "presentacion": "",
-    "precio": 0
+    "precio": 28
   },
   {
     "producto": "FLUMET X LT",
@@ -589,7 +581,7 @@
     "activo": "",
     "categoria": "",
     "presentacion": "",
-    "precio": 0
+    "precio": 150
   },
   {
     "producto": "FOLICUR X LT",
@@ -597,7 +589,7 @@
     "activo": "",
     "categoria": "",
     "presentacion": "",
-    "precio": 0
+    "precio": 190
   },
   {
     "producto": "FOSFATO DIAMONICO ROMERO X 50 KG",
@@ -605,7 +597,7 @@
     "activo": "",
     "categoria": "",
     "presentacion": "",
-    "precio": 0
+    "precio": 160
   },
   {
     "producto": "FOSFATO MONOAMONICO FERROSALT X 25 KG",
@@ -613,7 +605,7 @@
     "activo": "",
     "categoria": "",
     "presentacion": "",
-    "precio": 0
+    "precio": 135
   },
   {
     "producto": "FOSFATO MONOAMONICO ROMERO X 25 KG",
@@ -621,7 +613,7 @@
     "activo": "",
     "categoria": "",
     "presentacion": "",
-    "precio": 0
+    "precio": 140
   },
   {
     "producto": "FREEBAK X LT",
@@ -629,7 +621,7 @@
     "activo": "",
     "categoria": "",
     "presentacion": "",
-    "precio": 0
+    "precio": 120
   },
   {
     "producto": "FRUIT XL X LT",
@@ -637,7 +629,7 @@
     "activo": "",
     "categoria": "",
     "presentacion": "",
-    "precio": 0
+    "precio": 240
   },
   {
     "producto": "FUZZIL X 100 GR",
@@ -645,7 +637,7 @@
     "activo": "",
     "categoria": "",
     "presentacion": "",
-    "precio": 0
+    "precio": 70
   },
   {
     "producto": "GARDEN BROWN X 20 LT",
@@ -653,7 +645,7 @@
     "activo": "",
     "categoria": "",
     "presentacion": "",
-    "precio": 0
+    "precio": 250
   },
   {
     "producto": "GARDEN BROWN X 200 LT",
@@ -661,7 +653,7 @@
     "activo": "",
     "categoria": "",
     "presentacion": "",
-    "precio": 0
+    "precio": 1700
   },
   {
     "producto": "GARDEN BROWN X 5 LT",
@@ -669,7 +661,7 @@
     "activo": "",
     "categoria": "",
     "presentacion": "",
-    "precio": 0
+    "precio": 100
   },
   {
     "producto": "GARDEN BROWN X LT",
@@ -677,7 +669,7 @@
     "activo": "",
     "categoria": "",
     "presentacion": "",
-    "precio": 0
+    "precio": 20
   },
   {
     "producto": "GENDARME MAX X 125 GR",
@@ -685,7 +677,7 @@
     "activo": "",
     "categoria": "",
     "presentacion": "",
-    "precio": 0
+    "precio": 65
   },
   {
     "producto": "GF 120 X 4 LT",
@@ -693,7 +685,7 @@
     "activo": "",
     "categoria": "",
     "presentacion": "",
-    "precio": 0
+    "precio": 300
   },
   {
     "producto": "HIDROXIDO DE POTASIO X 25 KG",
@@ -709,7 +701,7 @@
     "activo": "",
     "categoria": "",
     "presentacion": "",
-    "precio": 0
+    "precio": 25
   },
   {
     "producto": "ICLORAZ X LT",
@@ -717,7 +709,7 @@
     "activo": "",
     "categoria": "",
     "presentacion": "",
-    "precio": 0
+    "precio": 110
   },
   {
     "producto": "ITACUR X KG",
@@ -725,7 +717,7 @@
     "activo": "",
     "categoria": "",
     "presentacion": "",
-    "precio": 0
+    "precio": 45
   },
   {
     "producto": "ITADATE X LT",
@@ -733,7 +725,7 @@
     "activo": "",
     "categoria": "",
     "presentacion": "",
-    "precio": 0
+    "precio": 80
   },
   {
     "producto": "JARDANI X 100 GR",
@@ -741,7 +733,7 @@
     "activo": "",
     "categoria": "",
     "presentacion": "",
-    "precio": 0
+    "precio": 35
   },
   {
     "producto": "KIESERITA ROMERO X 50 KG",
@@ -749,7 +741,7 @@
     "activo": "",
     "categoria": "",
     "presentacion": "",
-    "precio": 0
+    "precio": 70
   },
   {
     "producto": "KING PHOS X 25 KG",
@@ -765,7 +757,7 @@
     "activo": "",
     "categoria": "",
     "presentacion": "",
-    "precio": 0
+    "precio": 130
   },
   {
     "producto": "KUROMIL X 100 GR",
@@ -773,7 +765,7 @@
     "activo": "",
     "categoria": "",
     "presentacion": "",
-    "precio": 0
+    "precio": 9
   },
   {
     "producto": "LAMBFAST X 250 ML",
@@ -797,7 +789,7 @@
     "activo": "",
     "categoria": "",
     "presentacion": "",
-    "precio": 0
+    "precio": 100
   },
   {
     "producto": "MALLKI X 25 KG",
@@ -805,7 +797,7 @@
     "activo": "",
     "categoria": "",
     "presentacion": "",
-    "precio": 0
+    "precio": 28
   },
   {
     "producto": "MARFIL TOP X LT",
@@ -813,7 +805,7 @@
     "activo": "",
     "categoria": "",
     "presentacion": "",
-    "precio": 0
+    "precio": 220
   },
   {
     "producto": "MAXIM X 100 GRS",
@@ -821,7 +813,7 @@
     "activo": "",
     "categoria": "",
     "presentacion": "",
-    "precio": 0
+    "precio": 34
   },
   {
     "producto": "MEGA 20-20-20 X  20 LT",
@@ -829,7 +821,7 @@
     "activo": "",
     "categoria": "",
     "presentacion": "",
-    "precio": 0
+    "precio": 350
   },
   {
     "producto": "MEGA 20-20-20 X 5  LT",
@@ -837,7 +829,7 @@
     "activo": "",
     "categoria": "",
     "presentacion": "",
-    "precio": 0
+    "precio": 100
   },
   {
     "producto": "MEGA 20-20-20 X LT",
@@ -845,7 +837,7 @@
     "activo": "",
     "categoria": "",
     "presentacion": "",
-    "precio": 0
+    "precio": 25
   },
   {
     "producto": "MEGA ADHIERE X 10 LT",
@@ -853,7 +845,7 @@
     "activo": "",
     "categoria": "",
     "presentacion": "",
-    "precio": 0
+    "precio": 140
   },
   {
     "producto": "MEGA ADHIERE X 20 LT",
@@ -861,7 +853,7 @@
     "activo": "",
     "categoria": "",
     "presentacion": "",
-    "precio": 0
+    "precio": 260
   },
   {
     "producto": "MEGA ADHIERE X 5 LT",
@@ -869,7 +861,7 @@
     "activo": "",
     "categoria": "",
     "presentacion": "",
-    "precio": 0
+    "precio": 70
   },
   {
     "producto": "MEGA ADHIERE X LT",
@@ -877,7 +869,7 @@
     "activo": "",
     "categoria": "",
     "presentacion": "",
-    "precio": 0
+    "precio": 15
   },
   {
     "producto": "MEGA ALGAE X 20 LT",
@@ -893,7 +885,7 @@
     "activo": "",
     "categoria": "",
     "presentacion": "",
-    "precio": 0
+    "precio": 220
   },
   {
     "producto": "MEGA ALGAE X LT",
@@ -901,7 +893,7 @@
     "activo": "",
     "categoria": "",
     "presentacion": "",
-    "precio": 0
+    "precio": 50
   },
   {
     "producto": "MEGA AMINOALAGA",
@@ -909,7 +901,7 @@
     "activo": "",
     "categoria": "",
     "presentacion": "",
-    "precio": 0
+    "precio": 30
   },
   {
     "producto": "MEGA AMINOCID X 20 LT",
@@ -917,7 +909,7 @@
     "activo": "",
     "categoria": "",
     "presentacion": "",
-    "precio": 0
+    "precio": 650
   },
   {
     "producto": "MEGA AMINOCID X 5 LT",
@@ -925,7 +917,7 @@
     "activo": "",
     "categoria": "",
     "presentacion": "",
-    "precio": 0
+    "precio": 220
   },
   {
     "producto": "MEGA AMINOCID X LT",
@@ -2456,4 +2448,5 @@
   "precio": 0
 }
 ]
+
 
