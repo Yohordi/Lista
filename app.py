@@ -89,7 +89,36 @@ if resultados:
     st.markdown("### 📋 **Precios**")
     df = pd.DataFrame(resultados)
     df.columns = [col.upper() for col in df.columns]
-    st.dataframe(df.style.set_properties(**{'font-weight': 'bold'}), use_container_width=True)
+
+    # Estilos personalizados para tabla
+    def style_table(df):
+        styler = df.style.set_table_styles([
+            {"selector": "thead th", "props": [
+                ("background-color", "#f0f2f6"),
+                ("color", "#2c3e50"),
+                ("font-weight", "normal"),
+                ("text-align", "center"),
+                ("padding", "8px")
+            ]},
+            {"selector": "tbody td", "props": [
+                ("text-align", "center"),
+                ("padding", "6px"),
+                ("font-size", "13px"),
+                ("color", "#333")
+            ]}
+        ]).hide(axis="index")
+
+        # Resaltar columnas específicas
+        if "PRODUCTO" in df.columns:
+            styler = styler.set_properties(subset=["PRODUCTO"], **{"color": "#1f77b4", "font-weight": "bold"})
+        if "PRECIO" in df.columns:
+            styler = styler.set_properties(subset=["PRECIO"], **{"color": "#27ae60", "font-weight": "bold"})
+        if "PROVEEDOR" in df.columns:
+            styler = styler.set_properties(subset=["PROVEEDOR"], **{"color": "#8e44ad"})
+
+        return styler
+
+    st.dataframe(style_table(df), use_container_width=True)
 else:
     st.info("No se encontraron productos.")
 
@@ -138,59 +167,4 @@ if tipo_usuario == "Administrador":
                 nuevo_producto = st.text_input("🧪 Producto", value=producto_sel["producto"])
                 nuevo_proveedor = st.text_input("🏭 Proveedor", value=producto_sel["proveedor"])
                 nuevo_activo = st.text_input("💊 Activo", value=producto_sel["activo"])
-            with col2:
-                nueva_categoria = st.text_input("📂 Categoría", value=producto_sel["categoria"])
-                nueva_presentacion = st.text_input("📦 Presentación", value=producto_sel["presentacion"])
-                nuevo_precio = st.number_input("💲 Precio", value=int(producto_sel["precio"]), min_value=0, step=1, format="%d")
-            col_ed1, col_ed2 = st.columns(2)
-            guardar = col_ed1.form_submit_button("💾 Guardar cambios")
-            eliminar = col_ed2.form_submit_button("🗑️ Eliminar producto")
 
-            if guardar:
-                producto_sel.update({
-                    "producto": nuevo_producto,
-                    "proveedor": nuevo_proveedor,
-                    "activo": nuevo_activo,
-                    "categoria": nueva_categoria,
-                    "presentacion": nueva_presentacion,
-                    "precio": int(nuevo_precio)
-                })
-                with open("precios.json", "w", encoding="utf-8") as f:
-                    json.dump(productos, f, indent=2, ensure_ascii=False)
-                st.success("✅ Cambios guardados.")
-                st.rerun()
-
-            if eliminar:
-                productos.remove(producto_sel)
-                with open("precios.json", "w", encoding="utf-8") as f:
-                    json.dump(productos, f, indent=2, ensure_ascii=False)
-                st.success("🗑️ Producto eliminado.")
-                st.rerun()
-st.markdown("### 🔒 Descargar PDF")
-
-with st.expander("🔐 Ingresar clave para exportar PDF"):
-    clave_pdf = st.text_input("Ingrese la clave para imprimir", type="password")
-
-    if clave_pdf == "2050":
-        if st.button("📥 Descargar PDF"):
-            pdf = FPDF()
-            pdf.add_page()
-            pdf.set_font("Arial", size=12)
-            pdf.cell(200, 10, txt="Listado de Precios", ln=True, align="C")
-            pdf.ln(10)
-
-            for p in resultados:
-                linea = f"{p['producto']} - S/ {p['precio']}"
-                pdf.cell(200, 8, txt=linea, ln=True)
-
-            with tempfile.NamedTemporaryFile(delete=False, suffix=".pdf") as tmpfile:
-                pdf.output(tmpfile.name)
-                with open(tmpfile.name, "rb") as f:
-                    st.download_button(
-                        label="📄 Descargar PDF",
-                        data=f,
-                        file_name="listado_precios.pdf",
-                        mime="application/pdf"
-                    )
-    elif clave_pdf and clave_pdf != "2050":
-        st.error("❌ Clave incorrecta.")
