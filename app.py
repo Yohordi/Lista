@@ -3,6 +3,7 @@ import json
 import pandas as pd
 from fpdf import FPDF
 import tempfile
+import streamlit.components.v1 as components
 
 st.set_page_config(page_title="📦 Listado de Precios", layout="wide")
 st.markdown("<h1 style='text-align: center; color: #2c3e50;'>📦 Sistema de Precios Biocitrus</h1>", unsafe_allow_html=True)
@@ -21,10 +22,6 @@ st.markdown("""
         border-radius: 8px;
         padding: 6px 12px;
         margin-top: 8px;
-    }
-    .stDataFrame {
-        border: 1px solid #eee;
-        border-radius: 12px;
     }
     </style>
 """, unsafe_allow_html=True)
@@ -84,33 +81,42 @@ resultados = [
     and busqueda in p["producto"].lower()
 ]
 
-# --- Mostrar resultados ---
+# --- Mostrar resultados con scroll responsive ---
 if resultados:
     st.markdown("### 📋 **Precios**")
     df = pd.DataFrame(resultados)
     df.columns = [col.upper() for col in df.columns]
 
-    # Estilos minimalistas: encabezados en negrita, contenido normal
-    def style_table(df):
-        styler = df.style.set_table_styles([
-            {"selector": "thead th", "props": [
-                ("background-color", "#f0f2f6"),
-                ("color", "#2c3e50"),
-                ("font-weight", "bold"),   # Solo encabezados en negrita
-                ("text-align", "center"),
-                ("padding", "8px")
-            ]},
-            {"selector": "tbody td", "props": [
-                ("text-align", "center"),
-                ("padding", "6px"),
-                ("font-size", "13px"),
-                ("color", "#333"),
-                ("font-weight", "normal")  # Contenido normal
-            ]}
-        ]).hide(axis="index")
-        return styler
+    html = df.to_html(index=False, classes="styled-table")
 
-    st.dataframe(style_table(df), use_container_width=True)
+    st.markdown("""
+        <style>
+        .scroll-container {
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+        table.styled-table {
+            border-collapse: collapse;
+            width: 100%;
+            font-size: 13px;
+        }
+        table.styled-table th {
+            background: #f0f2f6;
+            color: #2c3e50;
+            font-weight: bold;
+            text-align: center;
+            padding: 6px;
+        }
+        table.styled-table td {
+            text-align: center;
+            padding: 6px;
+            color: #333;
+        }
+        </style>
+    """, unsafe_allow_html=True)
+
+    components.html(f"<div class='scroll-container'>{html}</div>", height=400, scrolling=True)
+
 else:
     st.info("No se encontraron productos.")
 
@@ -217,3 +223,4 @@ with st.expander("🔐 Ingresar clave para exportar PDF"):
                     )
     elif clave_pdf and clave_pdf != "2050":
         st.error("❌ Clave incorrecta.")
+
